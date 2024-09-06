@@ -1,51 +1,99 @@
-[
+ [
     {
         "id": 1,
-        "nome":" LD01 LOUNGE CHAIR",
-        "preco": 200,
+        "nome":" Xbox 360 Branco",
+        "preco": 1299,
         "imagem": "image/1.png"
     },
     {
         "id": 2,
-        "nome":" LD02 LOUNGE CHAIR",
-        "preco": 250,
+        "nome":"Xbox One e Kinect",
+        "preco": 1887,
         "imagem": "image/2.png"
     },
     {
         "id": 3,
-        "nome":" LD03 LOUNGE CHAIR",
-        "preco": 290,
+        "nome":"Xbox One S Minecraft Limited Edition",
+        "preco": 4999,
         "imagem": "image/3.png"
     },
     {
         "id": 4,
-        "nome":" LD04 LOUNGE CHAIR",
-        "preco": 200,
+        "nome":"Xbox Series X",
+        "preco": 4379,
        "imagem": "image/4.png"
     },
     {
         "id": 5,
-        "nome":" LD05 LOUNGE CHAIR",
-        "preco": 300,
+        "nome":"GTA V playstation 4",
+        "preco": 75,
         "imagem": "image/5.png"
     },
     {
         "id": 6,
-        "nome":" LD06 LOUNGE CHAIR",
-        "preco": 200,
+        "nome":"Playstation 3",
+        "preco": 1250,
        "imagem": "image/6.png"
     },
     {
         "id": 7,
-        "nome":" LD07 LOUNGE CHAIR",
-        "preco": 200,
+        "nome":"PlayStation 5",
+        "preco": 3300,
        "imagem": "image/7.png"
     },
     {
         "id": 8,
-        "nome":" LD08 LOUNGE CHAIR",
-        "preco": 200,
+        "nome":"Nintendo Switch",
+        "preco": 1890,
        "imagem": "image/8.png"
+    },
+    {
+        "id": 9,
+        "nome":" Xbox 360 Branco",
+        "preco": 1299,
+        "imagem": "image/9.png"
+    },
+    {
+        "id": 10,
+        "nome":"Xbox One e Kinect",
+        "preco": 1887,
+        "imagem": "image/10.png"
+    },
+    {
+        "id": 11,
+        "nome":"Xbox One S Minecraft Limited Edition",
+        "preco": 4999,
+        "imagem": "image/11.png"
+    },
+    {
+        "id": 12,
+        "nome":"Xbox Series X",
+        "preco": 4379,
+       "imagem": "image/12.png"
+    },
+    {
+        "id": 13,
+        "nome":"GTA V playstation 4",
+        "preco": 75,
+        "imagem": "image/13.png"
+    },
+    {
+        "id": 14,
+        "nome":"Playstation 3",
+        "preco": 1250,
+       "imagem": "image/14.png"
+    },
+    {
+        "id": 15,
+        "nome":"PlayStation 5",
+        "preco": 3300,
+       "imagem": "image/15.png"
+    },
+    {
+        "id": 16,
+        "nome":"Nintendo Switch",
+        "preco": 1890,
+       "imagem": "image/16.png"
     }
 
 ]

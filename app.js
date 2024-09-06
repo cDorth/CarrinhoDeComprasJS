@@ -1,3 +1,5 @@
+
+
 let listaProdutosHTML = document.querySelector('.listaProdutos');
 let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
 let iconCarrinho = document.querySelector('.iconeCarrinho');
@@ -8,7 +10,7 @@ let produtos = [];
 let Carrinho = [];
 
 
-iconCarrinho.addEventListener('click', () => {
+iconCarrinho.addEventListener('click', () => { 
     body.classList.toggle('mostrarCarrinho');
 })
 fecharCarrinho.addEventListener('click', () => {
@@ -17,8 +19,7 @@ fecharCarrinho.addEventListener('click', () => {
 
     const addDataNoHTML = () => {
 
-        // add novo datas
-        if(produtos.length > 0) // if has data
+        if(produtos.length > 0) 
         {
             produtos.forEach(produto => {
                 let novoproduto = document.createElement('div');
@@ -30,8 +31,9 @@ fecharCarrinho.addEventListener('click', () => {
                 <div class="preco">$${produto.preco}</div>
                 <button class="addCarrinho">adicionar no Carrinho</button>`;
                 listaProdutosHTML.appendChild(novoproduto);
-            });
-        }
+                    
+                });
+            }
     }
     listaProdutosHTML.addEventListener('click', (event) => {
         let positionClick = event.target;
@@ -71,8 +73,8 @@ const addCarrinhoNoHTML = () => {
             novoItem.classList.add('item');
             novoItem.dataset.id = item.produto_id;
 
-            let positionproduto = produtos.findIndex((value) => value.id == item.produto_id);
-            let info = produtos[positionproduto];
+            let posicaoproduto = produtos.findIndex((value) => value.id == item.produto_id);
+            let info = produtos[posicaoproduto];
             listaCarrinhoHTML.appendChild(novoItem);
             novoItem.innerHTML = `
             <div class="imagem">
@@ -83,9 +85,9 @@ const addCarrinhoNoHTML = () => {
                 </div>
                 <div class="totalpreco">$${info.preco * item.quantidade}</div>
                 <div class="quantidade">
-                    <span class="minus"><</span>
+                    <span class="menos"><</span>
                     <span>${item.quantidade}</span>
-                    <span class="plus">></span>
+                    <span class="mais">></span>
                 </div>
             `;
         })
@@ -95,30 +97,30 @@ const addCarrinhoNoHTML = () => {
 
 listaCarrinhoHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
-    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
+    if(positionClick.classList.contains('menos') || positionClick.classList.contains('mais')){
         let produto_id = positionClick.parentElement.parentElement.dataset.id;
-        let type = 'minus';
-        if(positionClick.classList.contains('plus')){
-            type = 'plus';
+        let type = 'menos';
+        if(positionClick.classList.contains('mais')){
+            type = 'mais';
         }
-        changequantidadeCarrinho(produto_id, type);
+        mudarquantidadeCarrinho(produto_id, type);
     }
 })
-const changequantidadeCarrinho = (produto_id, type) => {
-    let positionItemInCarrinho = Carrinho.findIndex((value) => value.produto_id == produto_id);
-    if(positionItemInCarrinho >= 0){
-        let info = Carrinho[positionItemInCarrinho];
+const mudarquantidadeCarrinho = (produto_id, type) => {
+    let posisaoItemNoCarrinho = Carrinho.findIndex((value) => value.produto_id == produto_id);
+    if(posisaoItemNoCarrinho >= 0){
+        let info = Carrinho[posisaoItemNoCarrinho];
         switch (type) {
-            case 'plus':
-                Carrinho[positionItemInCarrinho].quantidade = Carrinho[positionItemInCarrinho].quantidade + 1;
+            case 'mais':
+                Carrinho[posisaoItemNoCarrinho].quantidade = Carrinho[posisaoItemNoCarrinho].quantidade + 1;
                 break;
         
             default:
-                let changequantidade = Carrinho[positionItemInCarrinho].quantidade - 1;
-                if (changequantidade > 0) {
-                    Carrinho[positionItemInCarrinho].quantidade = changequantidade;
+                let mudarquantidade = Carrinho[posisaoItemNoCarrinho].quantidade - 1;
+                if (mudarquantidade > 0) {
+                    Carrinho[posisaoItemNoCarrinho].quantidade = mudarquantidade;
                 }else{
-                    Carrinho.splice(positionItemInCarrinho, 1);
+                    Carrinho.splice(posisaoItemNoCarrinho, 1);
                 }
                 break;
         }
@@ -127,19 +129,18 @@ const changequantidadeCarrinho = (produto_id, type) => {
     addCarrinhoNaMemoria();
 }
 
-const initApp = () => {
-    // get data produto
+const inicApp = () => {
     fetch('produtos.json')
     .then(response => response.json())
     .then(data => {
         produtos = data;
         addDataNoHTML();
 
-        // get data Carrinho from memory
         if(localArmaz.getItem('Carrinho')){
             Carrinho = JSON.parse(localArmaz.getItem('Carrinho'));
             addCarrinhoNoHTML();
         }
     })
 }
-initApp();
+inicApp();
+
