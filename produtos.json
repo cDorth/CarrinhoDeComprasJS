@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nome":" LD01 LOUNGE CHAIR",
+        "preco": 200,
+        "imagem": "image/1.png"
+    },
+    {
+        "id": 2,
+        "nome":" LD02 LOUNGE CHAIR",
+        "preco": 250,
+        "imagem": "image/2.png"
+    },
+    {
+        "id": 3,
+        "nome":" LD03 LOUNGE CHAIR",
+        "preco": 290,
+        "imagem": "image/3.png"
+    },
+    {
+        "id": 4,
+        "nome":" LD04 LOUNGE CHAIR",
+        "preco": 200,
+       "imagem": "image/4.png"
+    },
+    {
+        "id": 5,
+        "nome":" LD05 LOUNGE CHAIR",
+        "preco": 300,
+        "imagem": "image/5.png"
+    },
+    {
+        "id": 6,
+        "nome":" LD06 LOUNGE CHAIR",
+        "preco": 200,
+       "imagem": "image/6.png"
+    },
+    {
+        "id": 7,
+        "nome":" LD07 LOUNGE CHAIR",
+        "preco": 200,
+       "imagem": "image/7.png"
+    },
+    {
+        "id": 8,
+        "nome":" LD08 LOUNGE CHAIR",
+        "preco": 200,
+       "imagem": "image/8.png"
+    }
+
+]
