@@ -18,7 +18,6 @@ fecharCarrinho.addEventListener('click', () => {
 })
 
     const addDataNoHTML = () => {
-
         if(produtos.length > 0) 
         {
             produtos.forEach(produto => {
@@ -26,14 +25,17 @@ fecharCarrinho.addEventListener('click', () => {
                 novoproduto.dataset.id = produto.id;
                 novoproduto.classList.add('item');
                 novoproduto.innerHTML = 
-                `<img src="${produto.imagem}" alt="">
-                <h2>${produto.nome}</h2>
-                <div class="preco">$${produto.preco}</div>
-                <button class="addCarrinho">adicionar no Carrinho</button>`;
+                `<a href="${produto.link}" class="item-link"> 
+                    <img src="${produto.imagem}" alt="${produto.nome}"> 
+                    <h2>${produto.nome}</h2>
+                    <div class="preco">$${produto.preco}</div>
+                    <button class="addCarrinho" data-id="${produto.id}">adicionar no Carrinho</button>
+                </a>`
                 listaProdutosHTML.appendChild(novoproduto);
                     
                 });
             }
+
     }
     listaProdutosHTML.addEventListener('click', (event) => {
         let positionClick = event.target;
@@ -92,6 +94,7 @@ const addCarrinhoNoHTML = () => {
             `;
         })
     }
+    
     iconCarrinhoSpan.innerText = totalquantidade;
 }
 
@@ -109,7 +112,7 @@ listaCarrinhoHTML.addEventListener('click', (event) => {
 const mudarquantidadeCarrinho = (produto_id, type) => {
     let posisaoItemNoCarrinho = Carrinho.findIndex((value) => value.produto_id == produto_id);
     if(posisaoItemNoCarrinho >= 0){
-        let info = Carrinho[posisaoItemNoCarrinho];
+        var info = Carrinho[posisaoItemNoCarrinho];
         switch (type) {
             case 'mais':
                 Carrinho[posisaoItemNoCarrinho].quantidade = Carrinho[posisaoItemNoCarrinho].quantidade + 1;
@@ -135,12 +138,32 @@ const inicApp = () => {
     .then(data => {
         produtos = data;
         addDataNoHTML();
-
         if(localArmaz.getItem('Carrinho')){
             Carrinho = JSON.parse(localArmaz.getItem('Carrinho'));
             addCarrinhoNoHTML();
         }
     })
+
+}
+
+var btnC = document.querySelector(".comprar");
+var btnF = document.querySelector(".fechar");
+
+btnC.onmousemove = function(e){
+    var x = e.pageX - btn.offsetLeft;
+    var y = e.pageY - btn.offsetTop;
+
+    btnC.style.setProperty('--eixoX', x + 'px')
+    btnC.style.setProperty('--eixoY', y + 'px')
+           
+}
+btnF.onmousemove = function(e){
+    var x = e.pageX - btn.offsetLeft;
+    var y = e.pageY - btn.offsetTop;
+
+    btnF.style.setProperty('--eixoX', x + 'px')
+    btnF.style.setProperty('--eixoY', y + 'px')
+
 }
 inicApp();
 
