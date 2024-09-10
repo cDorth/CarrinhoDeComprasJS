@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #img{
+        width: 200px;
+    }
+</style>
+<body>
+    <h1>bem vindo</h1>
+    
+    <h1>Adicionar algum produto</h1>
+        <input type="number" placeholder="digite o id do produto"> 
+         <!-- pretendo deixar automatico o id -->
+        <input type="text" id="nome" placeholder="digite o nome do produto">
+        <input type="number" id="preco" placeholder="digite o preço">
+        <input type="text" id="link" placeholder="digite o link da interface">
+        <button onclick="adicionarProduto()">Adicionar</button>
+
+        <h1>Deletar algum produto</h1>
+        <input type="number" id="numero" placeholder="digite o numero do item que deseja deletar:">
+        <button onclick="removerProduto()">Deletar</button>
+    <div class="produtos">
+
+    </div>
+</body>
+</html>
+<script>
+    let divProdutos = document.querySelector(".produtos");
+    let id = document.getElementById("numero").value;
+    let nome = document.getElementById("nome").value;
+    let preco = document.getElementById("preco").value;
+    let link = document.getElementById("link").value;
+
+
+    fetch('produtos.json') 
+    .then(response => response.json())
+    .then(data => {
+        let produtos = data; 
+
+        produtos.forEach(produto => {
+            const produtoElement = document.createElement('div');
+            produtoElement.innerHTML = `
+                ${produto.id} - ${produto.nome} <br>
+                <img src="${produto.imagem}" id="img" alt="${produto.nome}">  
+                <br>
+            `; 
+            divProdutos.appendChild(produtoElement); 
+        });
+
+        function adicionarProduto(novoProduto) {
+            produtos.push(novoProduto); 
+            localStorage.setItem('produtos', JSON.stringify(produtos)) 
+            renderizarProdutos(); 
+        }
+        
+
+        function removerProduto(id) {
+            let index = produtos.findIndex(produto => produto.id === id);
+            if (index > -1) {
+                produtos.splice(index, 1);
+                localStorage.setItem('produtos', JSON.stringify(produtos))
+                renderizarProdutos(); 
+            }
+        }
+        console.log('Array de produtos atualizado:', produtos); 
+    });
+
+    function renderizarProdutos() {
+        divProdutos.innerHTML = ''; 
+        produtos.forEach(produto => {
+            const produtoElement = document.createElement('div');
+            produtoElement.innerHTML = `
+                ${produto.id} - ${produto.nome} <br>
+                <img src="${produto.imagem}" alt="${produto.nome}"> 
+                <br>
+            `; 
+            divProdutos.appendChild(produtoElement);
+        });
+    }
+</script>

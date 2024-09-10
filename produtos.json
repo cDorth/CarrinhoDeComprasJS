@@ -1,5 +1,6 @@
- [
-    {
+
+    [
+  {
         "id": 1,
         "nome":" Xbox 360 Branco",
         "preco": 1299,
@@ -97,4 +98,4 @@
        "imagem": "imagem/16.png"
     }
 
-]
+   ]

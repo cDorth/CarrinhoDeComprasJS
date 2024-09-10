@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGREDO</title>
+</head>
+<body>
+    <h1>OPS, você acabou descobrindo o segredo, mas para continuar você precisa da senha:</h1>
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="verificar()">Enviar</button>
+</body>
+</html>
+<Script>
+    const verif = "drone"; 
+
+    function verificar() {
+        let senhaDigitada = document.getElementById("senha").value; 
+     
+        if (verif === senhaDigitada) { 
+            window.location.href = "miniBD.html";
+        } else {
+            alert("Não foi dessa vez!"); 
+            window.location.href = "index.html";
+        }
+    }
+</Script>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -9,25 +10,114 @@ body{
     margin: 0;
     font-family: Poppins;
 
+
 }
 
-.navbar{
+.navbar{              
+
+
+
+
+
+
+
+
     display: flex;
     align-items: center;
-    background-color: #024dbd;
     width: 100%;
     height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 100;
+
+
+
+
+
+
+
+
+
+   
 }
+#navbar.rolagem{
+
+
+
+
+
+
+
+
+background-color:rgba(0, 9, 134, 0.548);
+
+
+
+
+
+
+
+}
+
+#navbar.rolagem a{
+
+
+
+
+
+
+    color:rgb(255, 255, 255);
+
+
+
+
+
+
+
+
+
+    }
+
+
 .navbar img{
+
+
+
+
+
+
+
+
+
     background-color: transparent;
     margin-top: 16px;
     margin-left: 90px;
     width: 160px;
     height: 50px;
    
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
+.banner{
+height: 100vh;
+background-image: url(imagem/fundoInic.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+top: 0;
+left: 0;
+}
 .navbar .topicos{
     width: 60%;
     margin-left: 7.5%;
@@ -36,23 +126,14 @@ body{
     flex-direction: row;
     color: #eee;
     font-size: 23px;
-
-    
 }
-
 .navbar .topicos :hover{
-
-
 color: rgb(255, 255, 255);
 cursor: pointer;
 opacity: 0.5;
 transform: scale(1.5);
 transition: 0.5s ease;
 }
-
-
-
-
 .container{
     text-align: center;
     padding-top: 10px;
@@ -66,6 +147,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+   
 }
 .iconeCarrinho{
     position: relative;
@@ -82,41 +164,41 @@ header{
     color: #fff;
     top: 50%;
     right: -20px;
+   
 }
 .titulo{
     font-size: 25px;
+}
+
+.listaProdutos{
+    margin: 30px 0px;
+    height: 150vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 .listaProdutos .item img{
     height: 0;
     width: 0;
 }
 
-.listaProdutos{
-    margin: 30px 0px;
-    height: 1320px;
-    width: 75%;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
+
 .container-lista{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    height: 1320px;
-    width: 100%;
 }
+
 
 .listaProdutos .item{
     background-color: #EEEEE6;
-    padding: 20px;
     border-radius: 10px;
-    height: 300px;
-    width: 250px;
-    margin: 15px 15px;
+    height: 35vh;
+    width: 15vw;
 }
+
 
 .listaProdutos .item h2{
     font-weight: 500;
@@ -135,6 +217,8 @@ header{
 }
 
 
+
+
 /* cart */
 .tabelaCarrinho{
     width: 400px;
@@ -148,12 +232,17 @@ header{
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+    z-index: 101;
+    
+    
 }
 body.mostrarCarrinho .tabelaCarrinho{
-    right: 0;
+    right: 0; 
+
 }
 body.mostrarCarrinho .container{
     transform: translateX(-250px);
+    
 }
 .tabelaCarrinho h1{
     padding: 20px;
@@ -168,19 +257,18 @@ body.mostrarCarrinho .container{
     height: 1px;
     width: 300px;
     background-color: #00196A;
+    margin-top: 50px;
+    margin-left: 10%;
 }
+
 
 .tabelaCarrinho h3{
     font-size: 23px;
+    margin-left: 40px;
+    margin-bottom: 30px;
     font-weight: 300;
 }
-/* .tabelaCarrinho button{
-    background-color: #E8BC0E;
-    border: none;
-    font-family: Poppins;
-    font-weight: 500;
-    cursor: pointer;
-} */
+
 .tabelaCarrinho .close{
     background-color: #eee;
 }
@@ -210,9 +298,11 @@ body.mostrarCarrinho .container{
 }
 .listaCarrinho .item:nth-child(even){
     background-color: #eee1;
+    
 }
 .listaCarrinho{
     overflow: auto;
+    
 }
 .listaCarrinho::-webkit-scrollbar{
     width: 0;
@@ -224,6 +314,8 @@ body.mostrarCarrinho .container{
 }
 
 
+
+
 /* mobile */
 @media only screen and (max-width: 768px) {
     .listaProdutos{
@@ -231,7 +323,9 @@ body.mostrarCarrinho .container{
     }
 }
 
+
 /*RODAPE*/
+
 
 footer{
     height: 500px;
@@ -241,6 +335,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 180px;
 }
 .rodape{
     display: flex;
@@ -280,6 +375,7 @@ footer{
     flex-direction: column;
     height: 100px;
     width: 350px;
+    margin-left: 10px;
 }
 .email h2{
     display: flex;
@@ -320,9 +416,19 @@ button img{
     background-color: white;
     margin-top: 5px;
 }
-.pagamento img{
-    height: 200px;
-    width: 70%;
+.pagamento {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 230px;
+    width: 400px;
+    flex-direction: column;
+    gap: 10px;
+}
+#pagamento{
+    height: 80px;
+    width: 130px;
+    border-radius: 12px;
 }
 .copyright{
     display: flex;
@@ -342,36 +448,44 @@ button img{
     width: 10vw;
     height: 10vw;
 }
+.redes-socias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+}
+
+#redeSocial{
+    height: 85px;
+    width: 85px;
+}
 
 
-
-
+.nome{
+    padding: 5px;
+    background-color: transparent;
+    border-top:solid #00196A 1px;
+    border-bottom:solid #00196A 1px;
+    border-left: solid transparent;
+    border-right: solid transparent;
+}
 
 .tabelaCarrinho button{
     background-color: #ffffff;
+    font-size: 20px;
+    color:#00196A;
     height: 80px;
-    color: #00196A;
     text-decoration: none;
     position: relative;
     overflow: hidden;
     border: #00196A solid 1px;
 }
 
-.tabelaCarrinho button::before{
-    content: '';
-    background-color:#00196A;
+ .tabelaCarrinho button:hover{
+    cursor: pointer;
     color: white;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: var(--eixoY);
-    left: var(--eixoX);
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
-    transition: width .5s, height .5s;
-}
-
- button:hover::before{
-    width: 1000px;
-    height: 1000px;
+    background-color: #00196A;     
+    
 }

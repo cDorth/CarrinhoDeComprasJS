@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,53 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagem/lupa.png" type="image/x-icon">
 </head>
+
 <body class="">
 
-    
-    <div class="navbar">
-        <img src="imagem/logo.png">
-
-            <div class="topicos">
-                <a>Sobre Nós</a>
-                <a>Ajuda</a>
-            </div> 
 
 
-            
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <div class="navbar" id="navbar">
+        <div class="container-FF" id="FF">
+            <div class="flex">
+
+                <div class="navbar">
+                    <img src="imagem/logo.png">
+
+                    <div class="topicos">
+                        <a>Sobre Nós</a>
+                        <a>Ajuda</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
+    <section class="banner"></section>
+    <!----------------------------------------------------------------------------------------------------------->
 
-<div class="container">
 
 
-<header>
-    
-    
-    
+
+    <div class="container">
+
+
+        <header>
+
+
+
             <div class="titulo">Lista de Produtos</div>
             <div class="iconeCarrinho">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
                 </svg>
-                <span>0</span>  
+                <span>0</span>
             </div>
         </header>
-    
+
         <div class="container-lista">
             <div class="listaProdutos">
 
@@ -47,13 +64,16 @@
     </div>
     <div class="tabelaCarrinho">
         <h1>Meu carrinho</h1>
-        <div class="listaCarrinho"> 
+        <div class="listaCarrinho">
         </div>
         <div class="linha"></div>
-        <h3>Total:</h3>
+        <div class="tc">
+            <h3>Total:</h3>
+            <p id="totalCarrinho"></p>
+        </div>
         <div class="btn">
-            <button class="fechar">FECHAR</button>
-            <button class="comprar">COMPRAR</button>
+            <button class="fechar" id="button">FECHAR</button>
+            <button class="comprar" id="button">COMPRAR</button>
         </div>
     </div>
 
@@ -64,7 +84,7 @@
                 <img src="imagem/certificado1.png" id="certificado" alt="">
                 <img src="imagem/certificado2.png" id="certificado" alt="">
                 <img src="imagem/certificado3.png" id="certificado" alt="">
-            
+
                 <div class="email">
                     <h2>Cadastre sue email para nossas ofertes</h2>
                     <div class="input-email">
@@ -72,29 +92,36 @@
                         <button>Cadastrar</button>
                     </div>
                 </div>
-                </div>
-    
-            <hr class="linha-rodape">
-    
+            </div>
+
+            <hr class="linha-rodape" onclick="navegarPagina()">
+
             <div class="rodape-baixo">
                 <div class="pagamento">
-                    <h1>Formas de Pagamento</h1>
-                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEWJxHoOMl3SxuMO7noGkYK9%2B0viFQSOewa3cZf18A2%2By1cCBW7CWLF43h8nv8YLpVLkEgv2329rEjyaRgVlQcWdi9aBJaTOar%2BVcUC8eQ6AdNTAaf9UZ2%2FH%2BCIlU0jOhMp3MIiQFdhiXlvvUnFKKUur2N1k0FkA8zaliOtmdeySoYpvWG6poEKl222Hx3J7PzduP3AKeUWdubxowK3LdQwH5BBPIbsUTvkWSVZ2q9c9OlWX7oAGTlCy%2FHZ7VCNinl8wJT2%2BUZxkkEgCueL8dbZ286BczkunPGdWPhvdapktRx%2FC1%2F%2BAGqw4O3Xa4rmQ0ROHJU6Kms0m8UjiYsrseRm6QrGibF8jPIEBT8MMNRydy1tFEhB4Vvlk3vxEzyZofNJZCqg%2B6rMSGnXqmWOd9jbzVM8AjYKPdwumytPcfl3pjMFY1WXk1YGAnxita0zpXuCVorxF8HXsVI15L7h6eSY5IGF%2BgZu8obEBQvWAlxQf6DHBKHMi1YUZKsAc41p7yS%2Fr%2FTFbB4aIaxsYvDtQz67jqrnJsua4ew8Ix5Ds03PhlYT9Les1y4fsA1VSnx9EUkw%3D&sz=w1920-h868" alt="">
+                    <div class="titulo-rodape-baixo">
+                        <h1>Formas de Pagamento</h1>
+                    </div>
+                    <div class="formas-pag"><img src="imagem/pix.png" alt="" id="pagamento">
+                        <img src="imagem/elo.png" alt="" id="pagamento">
+                        <img src="imagem/masterCard.png" alt="" id="pagamento">
+                        <img src="imagem/visa.png" id="pagamento">
+                        <img src="imagem/boleto.png" alt="" id="pagamento">
+                    </div>
                 </div>
-                
+
                 <div class="contato">
                     <h1>Contato</h1>
                     <p>example@gmail.com</p>
                     <p>11 99999-9999</p>
                 </div>
-    
+
                 <div class="redes-sociais">
                     <h1>Redes Sociais</h1>
                     <div class="iconRedes">
-                        <img src="" alt="" id="redeSocial">
-                        <img src="" alt="" id="redeSocial">
-                        <img src="" alt="" id="redeSocial">
-                        <img src="" alt="" id="redeSocial">
+                        <img src="imagem/iconInsta.png" alt="" id="redeSocial">
+                        <img src="imagem/iconTikTok.png" alt="" id="redeSocial">
+                        <img src="imagem/iconYoutube.png" alt="" id="redeSocial">
+                        <img src="imagem/iconFace.png" alt="" id="redeSocial">
                     </div>
                 </div>
 
@@ -109,19 +136,21 @@
                         <li>Perifericos</li>
                     </ul>
                 </div>
-    
+
             </div>
-    
-    
+
+
         </div>
-    
+
         <div class="rodape-copy">
-            <p class="copyright">copyright © - site feito para fins educativos <a>segredo</a></p>
+            <p class="copyright">copyright © - site feito para fins educativos <a href="segredo.html">segredo</a></p>
         </div>
-        
+
     </footer>
 
     <script src="app.js"></script>
-    
+    <script src="fundo.js"></script>
+
 </body>
+
 </html>
