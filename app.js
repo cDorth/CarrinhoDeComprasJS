@@ -169,5 +169,5 @@ btnF.onmousemove = function (e) {
 }
 inicApp();
 
-//teste
+//FUNÇÃO DO ODAKE
 

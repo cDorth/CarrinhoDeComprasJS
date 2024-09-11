@@ -12,16 +12,7 @@ body{
 
 
 }
-
 .navbar{              
-
-
-
-
-
-
-
-
     display: flex;
     align-items: center;
     width: 100%;
@@ -31,92 +22,38 @@ body{
     left: 0;
     transition: .5s;
     z-index: 100;
-
-
-
-
-
-
-
-
-
-   
+    
 }
 #navbar.rolagem{
-
-
-
-
-
-
-
-
-background-color:rgba(0, 9, 134, 0.548);
-
-
-
-
-
-
-
+    background-color: #003686;
+    
 }
 
 #navbar.rolagem a{
-
-
-
-
-
-
     color:rgb(255, 255, 255);
-
-
-
-
-
-
-
-
-
     }
-
-
+    #navbar.rolagem span{
+        color:rgb(255, 255, 255);
+        }
+        #navbar.rolagem svg{
+            color:rgb(255, 255, 255);
+            }
 .navbar img{
-
-
-
-
-
-
-
-
-
     background-color: transparent;
     margin-top: 16px;
     margin-left: 90px;
     width: 160px;
-    height: 50px;
-   
-
-
-
-
-
-
-
-
-
-
-
+    height: 50px;  
 }
 .banner{
 height: 100vh;
-background-image: url(imagem/fundoInic.jpg);
+background-image: url(imagem/fundoInic.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 top: 0;
 left: 0;
+
 }
 .navbar .topicos{
     width: 60%;
@@ -124,7 +61,7 @@ left: 0;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    color: #eee;
+    color: rgb(0, 24, 80);
     font-size: 23px;
 }
 .navbar .topicos :hover{
@@ -141,6 +78,7 @@ transition: 0.5s ease;
 }
 svg{
     width: 30px;
+    color: rgb(0, 24, 80);;
 }
 header{
     display: flex;
@@ -154,20 +92,24 @@ header{
 }
 .iconeCarrinho span{
     position: absolute;
-    background-color: rgb(0, 50, 212);
+
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #fff;
+    color: rgb(0, 24, 80);;
     top: 50%;
     right: -20px;
    
 }
 .titulo{
-    font-size: 25px;
+    font-size: 30px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 15px;
+    color: white;
+    width: 250px;
 }
 
 .listaProdutos{
@@ -330,7 +272,7 @@ body.mostrarCarrinho .container{
 footer{
     height: 500px;
     width: 100%;
-    background-color: #024dbd;
+    background-color: #003686;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,3 +431,115 @@ button img{
     background-color: #00196A;     
     
 }
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+width: 100%;
+background-size: contain;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 30.2%;
+    display: flex;
+    justify-content: center;
+}
+/*
+
+             ..                     .''.
+            c  '.          _,,    .'    '
+           ,     ,   ___  7###. .'       '
+          .       `-'   ''|####;#'. .##, .
+          ,               '####.##,######.
+         .                 '  ' '' ,####.
+        '                           '##'.
+       '                                .
+__,,--.--                                '
+      '                                  '
+  .--|-        &&                        -'-'''-.._
+     |         '&              &&         '
+    __,-                       '&        -'---.
+  ''  ,                                   ;
+       .             kk.                 -.-,_
+        -_           ''KK                ;
+          ''--,_                        ,
+                ''--,__           __,,--'
+                       ''--..,--''     Pr59
+
+*/
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #00196A;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #00196A;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #00196A;
+
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
+
+

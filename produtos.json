@@ -1,101 +1,100 @@
-
-    [
-  {
+[
+    {
         "id": 1,
-        "nome":" Xbox 360 Branco",
+        "nome": " Xbox 360 Branco",
         "preco": 1299,
         "imagem": "imagem/1.png",
-        "link": "https://www.google.com/search?q=js+manda+para+outra+pagina&rlz=1C1ONGR_pt-PTBR1059BR1059&oq=js+manda+para+outra+&gs_lcrp=EgZjaHJvbWUqCggDECEYoAEYiwMyBggAEEUYOTINCAEQIRigARiLAxj4BTIKCAIQIRigARiLAzIKCAMQIRigARiLAzIHCAQQIRigATIKCAUQIRigARiLA9IBCDgwNjJqMWo3qAIIsAIB&sourceid=chrome&ie=UTF-8"
+        "descricao": "O Xbox 360 branco é um console de videogame da Microsoft que oferece uma grande variedade de jogos e recursos de entretenimento, como streaming de filmes e música, além de conectividade online.",
+        "link": "paginaProd.html"
     },
     {
         "id": 2,
-        "nome":"Xbox One e Kinect",
+        "nome": "Xbox One e Kinect",
         "preco": 1887,
         "imagem": "imagem/2.png"
     },
     {
         "id": 3,
-        "nome":"Xbox One S Minecraft Limited Edition",
+        "nome": "Xbox One S Minecraft Limited Edition",
         "preco": 4999,
         "imagem": "imagem/3.png"
     },
     {
         "id": 4,
-        "nome":"Xbox Series X",
+        "nome": "Xbox Series X",
         "preco": 4379,
-       "imagem": "imagem/4.png"
+        "imagem": "imagem/4.png"
     },
     {
         "id": 5,
-        "nome":"Elder Ring PS5",
+        "nome": "Elder Ring PS5",
         "preco": 75,
         "imagem": "imagem/5.png"
     },
     {
         "id": 6,
-        "nome":"Playstation 3",
+        "nome": "Playstation 3",
         "preco": 1250,
-       "imagem": "imagem/6.png"
+        "imagem": "imagem/6.png"
     },
     {
         "id": 7,
-        "nome":"PlayStation 5",
+        "nome": "PlayStation 5",
         "preco": 3300,
-       "imagem": "imagem/7.png"
+        "imagem": "imagem/7.png"
     },
     {
         "id": 8,
-        "nome":"Nintendo Switch",
+        "nome": "Nintendo Switch",
         "preco": 1890,
-       "imagem": "imagem/8.png"
+        "imagem": "imagem/8.png"
     },
     {
         "id": 9,
-        "nome":" Xbox 360 Branco",
+        "nome": " Xbox 360 Branco",
         "preco": 1299,
         "imagem": "imagem/9.png"
     },
     {
         "id": 10,
-        "nome":"Xbox One e Kinect",
+        "nome": "Xbox One e Kinect",
         "preco": 1887,
-        "imagem": "imagem/10.png"
+        "imagem": "imagem/10.WEBP"
     },
     {
         "id": 11,
-        "nome":"Xbox One S Minecraft Limited Edition",
+        "nome": "Xbox One S Minecraft Limited Edition",
         "preco": 4999,
         "imagem": "imagem/11.png"
     },
     {
         "id": 12,
-        "nome":"Xbox Series X",
+        "nome": "Xbox Series X",
         "preco": 4379,
-       "imagem": "imagem/12.png"
+        "imagem": "imagem/12.WEBP"
     },
     {
         "id": 13,
-        "nome":"GTA V playstation 4",
+        "nome": "GTA V playstation 4",
         "preco": 75,
-        "imagem": "imagem/13.png"
+        "imagem": "imagem/13.WEBP"
     },
     {
         "id": 14,
-        "nome":"Playstation 3",
+        "nome": "Playstation 3",
         "preco": 1250,
-       "imagem": "imagem/14.png"
+        "imagem": "imagem/14.png"
     },
     {
         "id": 15,
-        "nome":"PlayStation 5",
+        "nome": "PlayStation 5",
         "preco": 3300,
-       "imagem": "imagem/15.png"
+        "imagem": "imagem/15.png"
     },
     {
         "id": 16,
-        "nome":"Nintendo Switch",
+        "nome": "Nintendo Switch",
         "preco": 1890,
-       "imagem": "imagem/16.png"
+        "imagem": "imagem/16.png"
     }
-
-   ]
+]
