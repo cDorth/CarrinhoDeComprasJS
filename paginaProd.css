@@ -86,12 +86,12 @@ transition: 0.5s ease;
     width: 90%;
 }
 .infoProd{
-    border: solid black 3px;
+    
     height: 70vh;
     width: 30%;
 }
-.preco-btn{
-    border: solid black 3px;
+.precoBtn{
+    
     height: 40vh;
     width: 15%;
     display: flex;

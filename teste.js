@@ -7,7 +7,7 @@ let imagemProd = document.querySelector('.imagemProd');
 let infoProd = document.querySelector('.infoProd');
 let preco-btn = document.querySelector('.preco-btn');
 
-let cartItem = document.querySelector('#item');
+let cartItem = document.querySelector('#product');
 
 
 const addDataNaPagina = () => {

@@ -1,5 +1,4 @@
 
-
 let listaProdutosHTML = document.querySelector('.listaProdutos');
 let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
 let iconCarrinho = document.querySelector('.iconeCarrinho');
@@ -9,6 +8,8 @@ let fecharCarrinho = document.querySelector('.fechar');
 let produtos = [];
 let Carrinho = [];
 
+
+let cartProd = document.querySelector('.item');
 
 iconCarrinho.addEventListener('click', () => {
     body.classList.toggle('mostrarCarrinho');
@@ -24,12 +25,14 @@ const addDataNoHTML = () => {
             novoproduto.dataset.id = produto.id;
             novoproduto.classList.add('item');
             novoproduto.innerHTML =
-                `<a href="${produto.link}" class="item-link"> 
+                `
+                    <a href="${produto.link}" class="item-link" id="a">  
                     <img src="${produto.imagem}" alt="${produto.nome}"> 
                     <h2>${produto.nome}</h2>
-                    <div class="preco">$${produto.preco}</div>
+                    <div class="preco">R$ ${produto.preco}</div>
                     </a>
                     <button class="addCarrinho" data-id="${produto.id}">Adicionar no Carrinho</button>
+                
                 `
             listaProdutosHTML.appendChild(novoproduto);
 
@@ -63,11 +66,12 @@ const addNoCarrinho = (produto_id) => {
     addCarrinhoNaMemoria();
 }
 const addCarrinhoNaMemoria = () => {
-    localArmaz.setItem('Carrinho', JSON.stringify(Carrinho));
+    localStorage.setItem('Carrinho', JSON.stringify(Carrinho));
 }
 const addCarrinhoNoHTML = () => {
     listaCarrinhoHTML.innerHTML = '';
     let totalquantidade = 0;
+    let precoTotal = 0;
     if (Carrinho.length > 0) {
         Carrinho.forEach(item => {
             totalquantidade = totalquantidade + item.quantidade;
@@ -78,24 +82,37 @@ const addCarrinhoNoHTML = () => {
             let posicaoproduto = produtos.findIndex((value) => value.id == item.produto_id);
             let info = produtos[posicaoproduto];
             listaCarrinhoHTML.appendChild(novoItem);
+            let itemPrecoTotal = info.preco * item.quantidade;
+            precoTotal += itemPrecoTotal;
             novoItem.innerHTML = `
+            
             <div class="imagem">
                     <img src="${info.imagem}">
                 </div>
                 <div class="nome">
                 ${info.nome}
                 </div>
-                <div class="totalpreco">$${info.preco * item.quantidade}</div>
+                <div class="totalpreco">R$ ${info.preco * item.quantidade}</div>
                 <div class="quantidade">
                     <span class="menos"><</span>
                     <span>${item.quantidade}</span>
                     <span class="mais">></span>
                 </div>
+            
+   
             `;
         })
     }
 
     iconCarrinhoSpan.innerText = totalquantidade;
+    let precoTotalElement = document.querySelector('#totalCarrinho');
+    if (!precoTotalElement) {
+        precoTotalElement = document.createElement('div');
+        precoTotalElement.classList.add('precoTotal');
+        listaCarrinhoHTML.appendChild(precoTotalElement);
+    }
+    precoTotalElement.innerText = "R$"+precoTotal.toFixed(2);
+
 }
 
 listaCarrinhoHTML.addEventListener('click', (event) => {
@@ -140,34 +157,14 @@ const inicApp = () => {
         .then(data => {
             produtos = data;
             addDataNoHTML();
-            if (localArmaz.getItem('Carrinho')) {
-                Carrinho = JSON.parse(localArmaz.getItem('Carrinho'));
+            if (localStorage.getItem('Carrinho')) {
+                Carrinho = JSON.parse(localStorage.getItem('Carrinho'));
                 addCarrinhoNoHTML();
             }
         })
 
 }
 
-var btnC = document.querySelector(".comprar");
-var btnF = document.querySelector(".fechar");
 
-btnC.onmousemove = function (e) {
-    var x = e.pageX - btn.offsetLeft;
-    var y = e.pageY - btn.offsetTop;
-
-    btnC.style.setProperty('--eixoX', x + 'px')
-    btnC.style.setProperty('--eixoY', y + 'px')
-
-}
-btnF.onmousemove = function (e) {
-    var x = e.pageX - btn.offsetLeft;
-    var y = e.pageY - btn.offsetTop;
-
-    btnF.style.setProperty('--eixoX', x + 'px')
-    btnF.style.setProperty('--eixoY', y + 'px')
-
-}
 inicApp();
-
-//FUNÇÃO DO ODAKE
 

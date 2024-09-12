@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
+
     <title>NODER</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagem/lupa.png" type="image/x-icon">
@@ -25,6 +28,18 @@
                     <div class="topicos">
                         <a>Sobre Nós</a>
                         <a>Ajuda</a>
+                        
+                        <div class="theme-switch-wrapper">
+                            <span id="toggle-icon">
+                              <span class="toggle-text">Tema Claro</span>
+                              <i class="fas fa-sun"></i>
+                            </span>
+                            <label class="theme-switch">
+                              <input type="checkbox" />
+                              <div class="slider round">
+                      
+                              </div>
+                          </div>
                         <div class="iconeCarrinho">
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -39,11 +54,10 @@
         </div>
 
     </div>
-    <!-- <section class="banner"></section> -->
-    <section class="slider">
+    <section class="slider1">
         <div class="slider-content">
             
-            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio1" checked>
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
 
@@ -102,8 +116,8 @@
         </div>
         <div class="linha"></div>
         <div class="tc">
-            <h3>Total:</h3>
-            <p id="totalCarrinho"></p>
+            <h3>Total:
+            <p id="totalCarrinho"></p></h3>
         </div>
         <div class="btn">
             <button class="fechar" id="button">FECHAR</button>
@@ -115,9 +129,11 @@
 
         <div class="rodape">
             <div class="rodape-cima">
-                <img src="imagem/certificado1.png" id="certificado" alt="">
-                <img src="imagem/certificado2.png" id="certificado" alt="">
-                <img src="imagem/certificado3.png" id="certificado" alt="">
+                <div class="certticados">
+                    <img src="imagem/certificado1.png" id="certificado" alt="">
+                    <img src="imagem/certificado2.png" id="certificado" alt="">
+                    <img src="imagem/certificado3.png" id="certificado" alt="">
+                </div>
 
                 <div class="email">
                     <h2>Cadastre sue email para nossas ofertes</h2>
@@ -155,7 +171,7 @@
                         <img src="imagem/iconInsta.png" alt="" id="redeSocial">
                         <img src="imagem/iconTikTok.png" alt="" id="redeSocial">
                         <img src="imagem/iconYoutube.png" alt="" id="redeSocial">
-                        <img src="imagem/iconFace.png" alt="" id="redeSocial">
+                       
                     </div>
                 </div>
 
@@ -164,10 +180,9 @@
                     <ul>
                         <li>Console</li>
                         <li>Jogos</li>
-                        <li>Comida</li>
-                        <li>Doces</li>
-                        <li>Roupas</li>
                         <li>Perifericos</li>
+                        <li>Controles</li>
+                        <li>Drone</li>
                     </ul>
                 </div>
 
@@ -184,6 +199,8 @@
 
     <script src="app.js"></script>
     <script src="fundo.js"></script>
+    <script src="modo.js"></script>
+    
 
 </body>
 

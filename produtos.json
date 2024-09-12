@@ -5,96 +5,111 @@
         "preco": 1299,
         "imagem": "imagem/1.png",
         "descricao": "O Xbox 360 branco é um console de videogame da Microsoft que oferece uma grande variedade de jogos e recursos de entretenimento, como streaming de filmes e música, além de conectividade online.",
-        "link": "paginaProd.html"
+        "link": "paginaProd.html?id=1"
     },
     {
         "id": 2,
         "nome": "Xbox One e Kinect",
         "preco": 1887,
-        "imagem": "imagem/2.png"
+        "imagem": "imagem/2.png",
+        "link": "paginaProd.html?id=2"
     },
     {
         "id": 3,
-        "nome": "Xbox One S Minecraft Limited Edition",
+        "nome": "Xbox One S Minecraft",
         "preco": 4999,
-        "imagem": "imagem/3.png"
+        "imagem": "imagem/3.png",
+        "link": "paginaProd.html?id=3"
     },
     {
         "id": 4,
         "nome": "Xbox Series X",
         "preco": 4379,
-        "imagem": "imagem/4.png"
+        "imagem": "imagem/4.png",
+        "link": "paginaProd.html?id=4"
     },
     {
         "id": 5,
-        "nome": "Elder Ring PS5",
-        "preco": 75,
-        "imagem": "imagem/5.png"
+        "nome": "Meta quest 3",
+        "preco": 4000,
+        "imagem": "imagem/5.png",
+        "link": "paginaProd.html?id=5"
     },
     {
         "id": 6,
-        "nome": "Playstation 3",
-        "preco": 1250,
-        "imagem": "imagem/6.png"
+        "nome": "Playstation 4",
+        "preco": 2050,
+        "imagem": "imagem/6.png",
+        "link": "paginaProd.html?id=6"
     },
     {
         "id": 7,
         "nome": "PlayStation 5",
-        "preco": 3300,
-        "imagem": "imagem/7.png"
+        "preco": 3999,
+        "imagem": "imagem/7.png",
+        "link": "paginaProd.html?id=7"
     },
     {
         "id": 8,
         "nome": "Nintendo Switch",
-        "preco": 1890,
-        "imagem": "imagem/8.png"
+        "preco": 2000,
+        "imagem": "imagem/8.png",
+        "link": "paginaProd.html?id=8"
     },
     {
         "id": 9,
-        "nome": " Xbox 360 Branco",
-        "preco": 1299,
-        "imagem": "imagem/9.png"
+        "nome": " Headset Gamer",
+        "preco": 450,
+        "imagem": "imagem/9.png",
+        "link": "paginaProd.html?id=9"
     },
     {
         "id": 10,
-        "nome": "Xbox One e Kinect",
-        "preco": 1887,
-        "imagem": "imagem/10.WEBP"
+        "nome": "Dualshock 5",
+        "preco": 250,
+        "imagem": "imagem/10.WEBP",
+        "link": "paginaProd.html?id=10"
     },
     {
         "id": 11,
-        "nome": "Xbox One S Minecraft Limited Edition",
-        "preco": 4999,
-        "imagem": "imagem/11.png"
+        "nome": "Drone",
+        "preco": 6000,
+        "imagem": "imagem/11.png",
+        "link": "paginaProd.html?id=11"
     },
     {
         "id": 12,
-        "nome": "Xbox Series X",
-        "preco": 4379,
-        "imagem": "imagem/12.WEBP"
+        "nome": "PSP",
+        "preco": 1500,
+        "imagem": "imagem/12.WEBP",
+        "link": "paginaProd.html?id=12"
     },
     {
         "id": 13,
-        "nome": "GTA V playstation 4",
-        "preco": 75,
-        "imagem": "imagem/13.WEBP"
+        "nome": "Controle Xbox Series X",
+        "preco": 150,
+        "imagem": "imagem/13.WEBP",
+        "link": "paginaProd.html?id=13"
     },
     {
         "id": 14,
-        "nome": "Playstation 3",
-        "preco": 1250,
-        "imagem": "imagem/14.png"
+        "nome": "Nintendo Switch Lite",
+        "preco": 1500,
+        "imagem": "imagem/14.png",
+        "link": "paginaProd.html?id=14"
     },
     {
         "id": 15,
-        "nome": "PlayStation 5",
-        "preco": 3300,
-        "imagem": "imagem/15.png"
+        "nome": "PlayStation 2",
+        "preco": 1500,
+        "imagem": "imagem/15.png",
+        "link": "paginaProd.html?id=15"
     },
     {
         "id": 16,
-        "nome": "Nintendo Switch",
-        "preco": 1890,
-        "imagem": "imagem/16.png"
+        "nome": "PlayStation 3",
+        "preco": 2000,
+        "imagem": "imagem/16.png",
+        "link": "paginaProd.html?id=16"
     }
 ]
