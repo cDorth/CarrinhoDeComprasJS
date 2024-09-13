@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+            "id": 3,
+            "nome": "Xbox One S Minecraft",
+            "preco": 4999,
+            "imagem": "imagem/3.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=3"
+        }
+        
+    ]
+    }

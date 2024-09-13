@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 13,
+        "nome": "Controle Xbox Series X",
+        "preco": 150,
+        "imagem": "imagem/13.WEBP",
+        "descricao": "",
+        "link": "paginaProd.html?id=13"
+        }
+        
+    ]
+    }

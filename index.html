@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="reveal.js" defer></script>
+    
 
     <title>NODER</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="temaEstilo">
     <link rel="shortcut icon" href="imagem/lupa.png" type="image/x-icon">
 </head>
 
@@ -31,11 +30,11 @@
                         
                         <div class="theme-switch-wrapper">
                             <span id="toggle-icon">
-                              <span class="toggle-text">Tema Claro</span>
+                              <span class="toggle-text" id="tema">Tema Claro</span>
                               <i class="fas fa-sun"></i>
                             </span>
                             <label class="theme-switch">
-                              <input type="checkbox" />
+                              <input id="temaEscuro" type="checkbox" />
                               <div class="slider round">
                       
                               </div>
@@ -62,15 +61,15 @@
             <input type="radio" name="btn-radio" id="radio3">
 
             <div class="slide-box primeiro">
-                <img src="imagem/slide-1.svg" alt="">
+                <img src="imagem/slide-1.svg" id="slide1" alt="">
             </div>
 
             <div class="slide-box">
-                <img class="img-desktop" src="imagem/slide-2.svg" alt="slide 3">
+                <img class="img-desktop" src="imagem/slide-2.svg" id="slide2" alt="slide 3">
             </div>
 
             <div class="slide-box">
-                <img class="img-desktop" src="imagem/slide-3.svg" alt="slide 3">
+                <img class="img-desktop" src="imagem/slide-3.svg" id="slide3" alt="slide 3">
             </div>
 
             <div class="nav-auto">
@@ -100,6 +99,14 @@
 
 
             <div class="titulo">Lista de Produtos</div>
+            <div class="busca">
+                <label for="buscaInput">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#00196A" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>
+                </label>
+                <input type="text" id="buscaInput" placeholder="Pesquisar">
+            </div>
     
         </header>
 

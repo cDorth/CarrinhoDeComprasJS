@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 6,
+        "nome": "Playstation 4",
+        "preco": 2050,
+        "imagem": "imagem/6.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=6"
+        }
+        
+    ]
+    }

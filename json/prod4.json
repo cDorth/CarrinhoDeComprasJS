@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 4,
+        "nome": "Xbox Series X",
+        "preco": 4379,
+        "imagem": "imagem/4.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=4"
+        }
+        
+    ]
+    }

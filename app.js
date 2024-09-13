@@ -26,13 +26,17 @@ const addDataNoHTML = () => {
             novoproduto.classList.add('item');
             novoproduto.innerHTML =
                 `
+                    
+
                     <a href="${produto.link}" class="item-link" id="a">  
-                    <img src="${produto.imagem}" alt="${produto.nome}"> 
+                    <img src="${produto.imagem}" alt="${produto.nome}" id> 
                     <h2>${produto.nome}</h2>
                     <div class="preco">R$ ${produto.preco}</div>
                     </a>
                     <button class="addCarrinho" data-id="${produto.id}">Adicionar no Carrinho</button>
-                
+                    
+              
+
                 `
             listaProdutosHTML.appendChild(novoproduto);
 
@@ -164,6 +168,15 @@ const inicApp = () => {
         })
 
 }
+
+// const cardContainer = document.querySelector(".listaProdutos");
+// const buscaInput = document.querySelector("#buscaInput");
+
+// buscaInput.addEventListener("keyup", (e) =>{
+//     const buscar = data.filter(i => i.title.toLocaleLowerCase)
+// })
+
+// window.addEventListener("load", displayData.bind(null,data))
 
 
 inicApp();

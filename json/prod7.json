@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 7,
+        "nome": "PlayStation 5",
+        "preco": 3999,
+        "imagem": "imagem/7.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=7"
+        }
+        
+    ]
+    }

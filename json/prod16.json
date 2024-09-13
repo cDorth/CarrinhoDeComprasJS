@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 16,
+        "nome": "PlayStation 3",
+        "preco": 2000,
+        "imagem": "imagem/16.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=16"
+        }
+        
+    ]
+    }

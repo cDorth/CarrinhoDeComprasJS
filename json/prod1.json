@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+            "id": 1,
+            "nome": " Xbox 360 Branco",
+            "preco": 1299,
+            "imagem": "imagem/1.png",
+            "descricao": "O Xbox 360 branco é um console de videogame da Microsoft que oferece uma grande variedade de jogos e recursos de entretenimento, como streaming de filmes e música, além de conectividade online.",
+            "link": "paginaProd.html?id=1"
+        }
+        
+    ]
+    }

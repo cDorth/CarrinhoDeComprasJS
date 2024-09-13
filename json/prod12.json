@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 12,
+        "nome": "PSP",
+        "preco": 1500,
+        "imagem": "imagem/12.WEBP",
+        "descricao": "",
+        "link": "paginaProd.html?id=12"
+        }
+        
+    ]
+    }

@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 8,
+        "nome": "Nintendo Switch",
+        "preco": 2000,
+        "imagem": "imagem/8.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=8"
+        }
+        
+    ]
+    }

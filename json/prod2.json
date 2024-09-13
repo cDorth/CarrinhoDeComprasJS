@@ -1,0 +1,12 @@
+{
+    "produtoSite": [
+        {
+            "id": 2,
+            "nome": "Xbox One e Kinect",
+            "preco": 1887,
+            "imagem": "imagem/2.png",
+            "descricao": "",
+            "link": "paginaProd.html?id=2"
+        }
+    ]
+}

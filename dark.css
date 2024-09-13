@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+    transition: all 0.3s ease-in-out; 
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: #000000;
+    color: #ffffff; 
+}
+.navbar {              
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 100;
+    
+}
+
+#navbar.rolagem {
+    background-color: #8f0000;
+    
+}
+
+#navbar.rolagem a {
+    color: rgb(255, 255, 255);
+    }
+
+    #navbar.rolagem span {
+        color: rgb(255, 255, 255);
+        }
+
+        #navbar.rolagem svg {
+            color: rgb(255, 255, 255);
+            }
+
+.navbar img {
+    background-color: transparent;
+    margin-top: 16px;
+    margin-left: 90px;
+    width: 160px;
+    height: 50px;  
+}
+.banner {
+height: 100vh;
+background-image: url(imagem/fundoInic.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+top: 0;
+left: 0;
+
+}
+
+.navbar .topicos {
+    width: 60%;
+    margin-left: 7.5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.topicos a:hover {
+    color: #dd0000;
+    font-size: 25px;  
+}
+
+.container{
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+svg{
+    width: 30px;
+    color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+   
+}
+.iconeCarrinho{
+    position: relative;
+    cursor: pointer;
+}
+
+.iconeCarrinho :hover{
+    color: #dd0000;
+    cursor: pointer;
+}
+
+
+.iconeCarrinho span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);;
+    top: 70%;
+    right: -20px;
+   
+}
+.titulo{
+    font-size: 3vw;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    margin-block:5%;
+    color: #ffffff;
+    width: 50vw;
+    
+}
+
+.listaProdutos{
+    margin: 30px 0px;
+    height: 150vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.listaProdutos .item img{
+    height: 0;
+    width: 0;
+}
+
+
+.container-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.listaProdutos .item{
+    background-color: #7e7e7e7e;
+    border: solid #dd0000 1px;
+    border-radius: 5px;
+    height: 35vh;
+    width: 15vw;
+}
+.listaProdutos .item:hover{
+    transform: scale(1.021);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+.listaProdutos .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listaProdutos .item .preco{
+    font-size: medium;
+}
+.listaProdutos .item button{
+    background-color: #5f0000;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+.listaProdutos .item button:hover{
+    cursor: pointer;
+    border: solid #d40000 1px;
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+
+/* cart */
+.tabelaCarrinho{
+    width: 400px;
+    background-color: #000000;
+    color: #ffffff;
+    border: #d30000c0 solid 0.5px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 101;
+    
+    
+}
+
+
+body.mostrarCarrinho .tabelaCarrinho{
+    right: 0; 
+
+}
+body.mostrarCarrinho .container{
+    transform: translateX(-250px);
+    
+}
+.tabelaCarrinho h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.tabelaCarrinho .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.linha{
+    height: 1px;
+    width: 300px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+
+.tabelaCarrinho h3{
+    font-size: 23px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+#totalCarrinho{
+    margin-top: -8%;
+    margin-left: 200px;
+}
+
+.tabelaCarrinho .close{
+    background-color: #eee;
+}
+
+.listaCarrinho .item img{
+    width: 100%;
+}
+.listaCarrinho .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+ #a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+.listaCarrinho .quantidade span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+}
+.listaCarrinho .quantidade span:nth-child(2){
+    background-color: transparent;
+    color: #ffffff;
+    cursor: auto;
+}
+.listaCarrinho .item:nth-child(even){
+    background-color: #eee1;
+    
+}
+.listaCarrinho{
+    overflow: auto;
+    
+}
+.listaCarrinho::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listaProdutos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listaProdutos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*RODAPE*/
+
+
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: #6b000044; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    width: 90%;
+}
+.rodape-cima{
+    height: 150px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    gap: 100px;
+    
+}
+
+
+#certificado{
+    height: 80px;
+    width: 160px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+.rodape-baixo{
+    height: 300px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 15px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100px;
+    width: 350px;
+    margin-left: 10px;
+}
+.email h2{
+    display: flex;
+    justify-content: flex-s;
+    color: white;
+    font-size: 18px;
+    height: 18px;
+    width: 378px;
+    margin-bottom: 5px;
+}
+.input-email input{
+    height: 35px;
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+    background-color: white;   
+    font-size: 17px;
+}
+.input-email button{
+    height: 39px;
+    width: 77px;
+    text-align: center;
+    border-radius: 0 8px 8px 0;
+    font-size: 15px;
+}
+.input-email{
+    display: flex;
+    justify-content: center;
+}
+
+button img{
+    height: 15px;
+    width: 15px;
+}
+
+.linha-rodape{
+    height: 2px;
+    width: 90%;
+    background-color: white;
+    margin-top: 5px;
+}
+.pagamento {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 230px;
+    width: 400px;
+    flex-direction: column;
+    gap: 10px;
+}
+#pagamento{
+    height: 80px;
+    width: 130px;
+    border-radius: 12px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.rodape-copy{
+    height: 80px;
+    width: 100%;
+    background-color: #6a0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listaProdutos .item img{
+    width: 10vw;
+    height: 10vw;
+}
+.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+}
+
+#redeSocial{
+    height: 85px;
+    width: 85px;
+}
+
+/*--------------------------------------*/
+
+
+.tabelaCarrinho button{
+    background-color: #ffffff;
+    font-size: 20px;
+    color:#6a0000;
+    height: 80px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border: #6a0000 solid 1px;
+}
+
+ .tabelaCarrinho button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #6a0000;     
+    
+}
+
+section.slider1{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+width: 100%;
+background-size: contain;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 30.2%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #d10000;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #6a0000;
+
+}
+
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
+
+/*********************SCROLL*******************************************************************/
+
+
+
+/*
+
+             ..                     .''.
+            c  '.          _,,    .'    '
+           ,     ,   ___  7###. .'       '
+          .       `-'   ''|####;#'. .##, .
+          ,               '####.##,######.
+         .                 '  ' '' ,####.
+        '                           '##'.
+       '                                .
+__,,--.--                                '
+      '                                  '
+  .--|-        &&                        -'-'''-.._
+     |         '&              &&         '
+    __,-                       '&        -'---.
+  ''  ,                                   ;
+       .             kk.                 -.-,_
+        -_           ''KK                ;
+          ''--,_                        ,
+                ''--,__           __,,--'
+                       ''--..,--''     Pr59
+
+*/
+/*****************************SCROLL*********************************/
+
+@keyframes appear {
+
+
+    from{
+    
+    opacity: 0;
+    scale: 0.5;
+    
+    }
+    to {
+    
+    opacity: 10;
+    scale: 1.0;
+    
+    }
+    }
+    
+    .item{
+    
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 ;
+    
+    }
+/****************************************************************************/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    right: 25px;
+    top: 30px;
+  }
+  
+  .theme-switch-wrapper span {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .toggle-text {
+    position: relative;
+    top: -4px;
+    right: 5px;
+    color: var(--on-background);
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background: #eee;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  
+  .slider::before {
+    background: #a32323;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(211, 211, 211);
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round::before {
+    border-radius: 50%;
+  }
+  
+  .fas {
+    font-size: 30px;
+    margin-right: 5px;
+  }
+  
+
+
+.email input { 
+    background-color: #eee;
+}
+
+.email button { 
+    color: #000;
+    background-color: #eee; 
+}
+
+.input-email button{ 
+    background-color: #ba0000;  
+    color: #FFF;
+}

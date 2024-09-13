@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 5,
+        "nome": "Meta quest 3",
+        "preco": 4000,
+        "imagem": "imagem/5.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=5"
+        }
+        
+    ]
+    }

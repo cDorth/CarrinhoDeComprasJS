@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 10,
+        "nome": "Dualshock 5",
+        "preco": 250,
+        "imagem": "imagem/10.WEBP",
+        "descricao": "",
+        "link": "paginaProd.html?id=10"
+        }
+        
+    ]
+    }

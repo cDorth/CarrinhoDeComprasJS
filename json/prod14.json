@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 14,
+        "nome": "Nintendo Switch Lite",
+        "preco": 1500,
+        "imagem": "imagem/14.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=14"
+        }
+        
+    ]
+    }

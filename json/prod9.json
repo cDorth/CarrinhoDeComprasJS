@@ -1,0 +1,13 @@
+{
+    "produtoSite": [
+        {
+        "id": 9,
+        "nome": " Headset Gamer",
+        "preco": 450,
+        "imagem": "imagem/9.png",
+        "descricao": "",
+        "link": "paginaProd.html?id=9"
+        }
+        
+    ]
+    }

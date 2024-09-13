@@ -4,26 +4,15 @@
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
-    transition: all 0.3s ease-in-out; /* Adiciona transição suave para todos os elementos */
+    transition: all 0.3s ease-in-out; 
 }
 
 body {
     margin: 0;
     font-family: Poppins;
-    background-color: #EEE; /* Cor de fundo clara */
-    color: #333; /* Cor do texto clara */
+    background-color: #EEE;
+    color: #333; 
 }
-
-body.dark-mode {
-    background-color: #ff0000; /* Cor de fundo escura */
-    color: #ffffff; /* Cor do texto clara */
-}
-body.dark-mode a {
-    background-color: #ff0000; /* Cor de fundo escura */
-    color: #ffffff; /* Cor do texto clara */
-}
-
-
 .navbar {              
     display: flex;
     align-items: center;
@@ -81,19 +70,9 @@ left: 0;
     color: #ffffff;
     font-size: 23px;
 }
-
-
-/* Adicionando modo escuro */
-.navbar.dark-mode .topicos {
-    color: #eee; /*  Define a cor do texto */ 
-}
-
-.navbar.dark-mode img {
-    /* Ajuste as cores da imagem se necessário */ 
-}
-
 .topicos a:hover {
-    color: #333;  
+    color: #00a2ff;
+    font-size: 25px;  
 }
 .container{
     text-align: center;
@@ -114,7 +93,14 @@ header{
 }
 .iconeCarrinho{
     position: relative;
+    cursor: pointer;
 }
+
+.iconeCarrinho :hover{
+    color: #00a2ff;
+    cursor: pointer;
+}
+
 .iconeCarrinho span{
     position: absolute;
     width: 30px;
@@ -126,6 +112,7 @@ header{
     color: rgb(255, 255, 255);;
     top: 70%;
     right: -20px;
+    cursor: pointer;
    
 }
 .titulo{
@@ -136,9 +123,6 @@ header{
     color: #00196A;
     width: 50vw;
     
-}
-.titulo.dark-mode {
-  color: #eee; /* Define a cor do título no modo escuro */
 }
 
 .listaProdutos{
@@ -202,13 +186,7 @@ header{
     color: #00196A;
 
 }
-.listaProdutos .item h2.dark-mode{
-    color: #fff;
-}
 
-.listaProdutos .item .preco.dark-mode{
-    color: #eee;
-}
 
 /* cart */
 .tabelaCarrinho{
@@ -228,10 +206,6 @@ header{
     
 }
 
-.tabelaCarrinho.dark-mode{
-    background-color: #333; /* Cor de fundo escura */
-    color: #eee; /* Cor do texto clara */ 
-}
 
 body.mostrarCarrinho .tabelaCarrinho{
     right: 0; 
@@ -258,11 +232,6 @@ body.mostrarCarrinho .container{
     margin-left: 10%;
 }
 
-.linha.dark-mode{
-    background-color: #eee;
-}
-
-
 .tabelaCarrinho h3{
     font-size: 23px;
     margin-left: 40px;
@@ -276,16 +245,6 @@ body.mostrarCarrinho .container{
 
 .tabelaCarrinho .close{
     background-color: #eee;
-}
-
-.tabelaCarrinho .btn button.dark-mode{ 
-    background-color: #eee;
-    color: #00196A; 
-}
-
-.tabelaCarrinho .btn button.dark-mode:hover{ 
-    background-color: #00196A; 
-    color: #eee;
 }
 
 .listaCarrinho .item img{
@@ -350,16 +309,12 @@ body.mostrarCarrinho .container{
 footer{
     height: 500px;
     width: 100%;
-    background-color: #003686; /*  Azul Escuro */
+    background-color: #003686; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 180px;
-}
-footer.dark-mode{ 
-    background-color: #00196A; /* Cor de fundo escuro */
-    color: #eee; /* Cor do texto claro */ 
 }
 
 .rodape{
@@ -380,9 +335,7 @@ footer.dark-mode{
     gap: 100px;
     
 }
-#certificados{
 
-}
 
 #certificado{
     height: 80px;
@@ -488,8 +441,8 @@ button img{
 }
 
 #redeSocial{
-    height: 85px;
-    width: 85px;
+    height: 45px;
+    width: 45px;
 }
 
 /*--------------------------------------*/
@@ -626,10 +579,29 @@ __,,--.--                                '
 */
 /*****************************SCROLL*********************************/
 
+@keyframes appear {
 
-.item-link, .preco, .addCarrinho{
 
-visibility: hidden;
+from{
+
+opacity: 0;
+scale: 0.5;
+
+}
+to {
+
+opacity: 10;
+scale: 1;
+
+}
+}
+
+.item{
+
+animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0% 
+cover 40%;
 
 }
 
@@ -710,142 +682,6 @@ visibility: hidden;
   }
   
 
-  /* modo escuro */
-
-body.dark-mode .navbar{
-    background-color: #000; /* Fundo escuro da navbar */ 
-}
-
-body.dark-mode .navbar img{ 
-    filter: invert(1); /* Inverte a cor da imagem  */
-}
-
-body.dark-mode .topicos{ 
-    color: #eee; /* Define a cor do texto  */
-}
-
-body.dark-mode .iconeCarrinho svg{ 
-    stroke: white; 
-} 
-
-body.dark-mode .listaProdutos .item { 
-    background-color: #000;  
-    border: solid #eee 1px; /* Cor da borda do tema escuro  */ 
-}
-
-body.dark-mode .listaProdutos .item h2 { 
-    color: #eee;  /* Cor do texto do produto no tema escuro */
-}
-
-body.dark-mode .listaProdutos .item .preco{
-    color: #eee; 
-} 
-
-body.dark-mode .listaProdutos .item button{ 
-    background-color: #eee;  /* Fundo do botão do tema escuro */
-    color: #000;  /* Cor do texto do botão do tema escuro */
-}
-
-body.dark-mode .listaProdutos .item button:hover{
-    background-color: #eee;
-    color: #000;  /* Fundo do botão do tema escuro */
-    color: #000; /* Cor do texto do botão do tema escuro */
-    border: none;  
-}
-
-body.dark-mode .tabelaCarrinho{
-    background-color: #000; /*  Cor de fundo do carrinho */
-    color: #eee;  /*  Cor do texto  */ 
-}
-
-body.dark-mode .linha{
-    background-color: #eee; /* Cor da linha do carrinho  */ 
-}
-
-body.dark-mode .tabelaCarrinho button{
-    background-color: #333; 
-    color: #eee; 
-} 
-
-body.dark-mode .tabelaCarrinho button:hover {
-    background-color: #eee;
-    color: #000; 
-}
-
-
-body.dark-mode .listaCarrinho .item{ 
-    background-color: #000;  /* Fundo do item do carrinho */
-}
-
-body.dark-mode .listaCarrinho .quantidade span:hover{ 
-    color: #000;
-    background-color: #eee;
-}
-
-body.dark-mode .listaCarrinho .quantidade span {
-    color: #eee; /*  Cor do texto do botão do tema escuro */ 
-}
-
-body.dark-mode footer { 
-    background-color: #222;  /*  Fundo escuro do  footer  */ 
-} 
-/*  Outras classes que precisam de mudanças no modo  escuro */
-
-body.dark-mode .rodape-cima, body.dark-mode .rodape-baixo { 
-    color: #eee;  
-}
- 
-body.dark-mode .copyright {
-    color: #eee;  
-}
-
-/*  ...  adicionando  estilos  */
-
-body.dark-mode .navbar .topicos a:hover{
-    color: #eee; 
-}
-
-body.dark-mode .nav-manual .manual-btn, 
-body.dark-mode .nav-auto div {
-    border: 1px solid #eee; 
-}
-
-body.dark-mode .nav-manual .manual-btn:hover {
-    background-color: #4d76ff; 
-}
-
-body.dark-mode #radio1:checked ~ .nav-auto .auto-btn1,
-body.dark-mode #radio2:checked ~ .nav-auto .auto-btn2,
-body.dark-mode #radio3:checked ~ .nav-auto .auto-btn3 {
-    background-color: #4d76ff; /*  A cor não deve mudar, é  o   mesmo   azul  */ 
-} 
-
-/*  Estilos do Switch */
-
-body.dark-mode .theme-switch-wrapper span {
-    background-color: #eee; 
-}
-
-body.dark-mode .theme-switch-wrapper label {
-    color: #eee;  /* Cor do label no modo escuro  */ 
-}
-
-body.dark-mode .theme-switch {
-    background: #333; 
-}
-
-body.dark-mode .slider {
-    background: #eee;
-} 
-
-body.dark-mode .slider::before {
-    background: #000;
-}
-
-body.dark-mode .rodape-cima, body.dark-mode .rodape-baixo {
-    color: #eee; 
-}
-
 
 .email input { 
     background-color: #eee;
@@ -861,8 +697,38 @@ body.dark-mode .rodape-cima, body.dark-mode .rodape-baixo {
     color: #FFF;
 }
 
-/* Ajustando os certificados */
 
-body.dark-mode #certificado{ 
-  border-color: #eee; /*  Cor da borda para o tema escuro  */
+
+
+
+/* ---------------------------------------------- */
+/* fallback */
+.busca{
+display: flex;
+align-items: center;
+border: 1px solid #00196A;
+background-color: #EEE;
+width: 400px;
+margin:20px auto;
+border-radius: 20px;
+padding: 5px 10px;
+color: black;
+}
+
+.busca button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#buscaInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.busca label{
+    height: 20px;
 }
