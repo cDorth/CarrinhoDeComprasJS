@@ -2,10 +2,10 @@
     "produtoSite": [
         {
         "id": 10,
-        "nome": "Dualshock 5",
+        "nome": "DualSense 5",
         "preco": 250,
         "imagem": "imagem/10.WEBP",
-        "descricao": "",
+        "descricao": "O DualSense, controle do PS5, oferece uma experiência imersiva com feedback háptico e gatilhos adaptáveis, proporcionando sensações realistas nos jogos. Ele conta com microfone embutido, design ergonômico e é compatível com várias funcionalidades do console, elevando a jogabilidade.",
         "link": "paginaProd.html?id=10"
         }
         

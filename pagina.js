@@ -11,7 +11,6 @@ let cartItem = document.querySelector('#product');
 // Função para pegar o ID 
 function getProductIdFromURL() {
     const params = new URLSearchParams(window.location.search);
-    console.log(params);
     return params.get("id");
 }
 const productId = getProductIdFromURL();
@@ -37,11 +36,10 @@ fetch(jsonCerto).then((response) => {
         <div class="infoProd">
             <h1>${prod.nome}</h1>
             <p>${prod.descricao}</p>
-        </div>
-
-        <div class="preco-btn">
-            <span id="preco">${prod.preco}</span>
-            <button class="addCarrinho" data-id="${prod.id}">Adicionar no Carrinho</button>
+              <div class="precoBtn">
+                <span id="preco">R$${prod.preco},00</span>
+                <button class="addCarrinho" data-id="${prod.id}">Adicionar no Carrinho</button>
+              </div>
         </div>
         
     `;

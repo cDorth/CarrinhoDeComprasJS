@@ -184,8 +184,8 @@ header{
 .listaProdutos .item button:hover{
     cursor: pointer;
     border: solid #d40000 1px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #d40000;
 
 }
 
@@ -697,3 +697,39 @@ __,,--.--                                '
     background-color: #ba0000;  
     color: #FFF;
 }
+
+
+/* ============================ */
+.busca{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ba0000;
+    background-color: #EEE;
+    width: 400px;
+    margin:20px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+    }
+    
+    .busca button{
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #buscaInput{
+        padding: 8px;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+    }
+    
+    .busca label{
+        height: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }

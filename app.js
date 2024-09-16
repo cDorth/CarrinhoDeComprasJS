@@ -7,6 +7,7 @@ let body = document.querySelector('body');
 let fecharCarrinho = document.querySelector('.fechar');
 let produtos = [];
 let Carrinho = [];
+let searchInput = document.getElementById('buscaInput');
 
 
 let cartProd = document.querySelector('.item');
@@ -18,31 +19,27 @@ fecharCarrinho.addEventListener('click', () => {
     body.classList.toggle('mostrarCarrinho');
 })
 
-const addDataNoHTML = () => {
-    if (produtos.length > 0) {
-        produtos.forEach(produto => {
+const addDataNoHTML = (produtosParaMostrar) => {
+    listaProdutosHTML.innerHTML = '';
+    if (produtosParaMostrar.length > 0) {
+        produtosParaMostrar.forEach(produto => {
             let novoproduto = document.createElement('div');
             novoproduto.dataset.id = produto.id;
             novoproduto.classList.add('item');
             novoproduto.innerHTML =
                 `
-                    
-
-                    <a href="${produto.link}" class="item-link" id="a">  
-                    <img src="${produto.imagem}" alt="${produto.nome}" id> 
+                <a href="${produto.link}" class="item-link">  
+                    <img src="${produto.imagem}" alt="${produto.nome}"> 
                     <h2>${produto.nome}</h2>
                     <div class="preco">R$ ${produto.preco}</div>
-                    </a>
-                    <button class="addCarrinho" data-id="${produto.id}">Adicionar no Carrinho</button>
-                    
-              
-
-                `
+                </a>
+                <button class="addCarrinho" data-id="${produto.id}">Adicionar no Carrinho</button>
+               `
             listaProdutosHTML.appendChild(novoproduto);
-
         });
+    } else {
+        listaProdutosHTML.innerHTML = '<p>Nenhum produto encontrado.</p>';
     }
-
 }
 listaProdutosHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
@@ -153,14 +150,20 @@ const mudarquantidadeCarrinho = (produto_id, type) => {
     addCarrinhoNaMemoria();
 }
 
-
+searchInput.addEventListener('input', (event) => {
+    let query = event.target.value.toLowerCase();
+    let produtosFiltrados = produtos.filter(produto => 
+        produto.nome.toLowerCase().includes(query)
+    );
+    addDataNoHTML(produtosFiltrados);
+});
 
 const inicApp = () => {
     fetch('produtos.json')
         .then(response => response.json())
         .then(data => {
             produtos = data;
-            addDataNoHTML();
+            addDataNoHTML(produtos);
             if (localStorage.getItem('Carrinho')) {
                 Carrinho = JSON.parse(localStorage.getItem('Carrinho'));
                 addCarrinhoNoHTML();
@@ -169,15 +172,13 @@ const inicApp = () => {
 
 }
 
-// const cardContainer = document.querySelector(".listaProdutos");
-// const buscaInput = document.querySelector("#buscaInput");
-
-// buscaInput.addEventListener("keyup", (e) =>{
-//     const buscar = data.filter(i => i.title.toLocaleLowerCase)
-// })
-
-// window.addEventListener("load", displayData.bind(null,data))
 
 
 inicApp();
+
+
+
+
+
+
 

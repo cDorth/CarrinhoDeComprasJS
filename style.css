@@ -13,6 +13,19 @@ body {
     background-color: #EEE;
     color: #333; 
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #003686;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #003686;  /* creates padding around scroll thumb */
+  }
 .navbar {              
     display: flex;
     align-items: center;
@@ -153,21 +166,21 @@ header{
     border-radius: 5px;
     height: 35vh;
     width: 15vw;
+
 }
 .listaProdutos .item:hover{
     transform: scale(1.021);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-
 }
-
 
 .listaProdutos .item h2{
     font-weight: 500;
     font-size: large;
+    color: #00196A;
 }
 .listaProdutos .item .preco{
     font-size: medium;
+    color: #00196A;
 }
 .listaProdutos .item button{
     background-color: #00196A;
@@ -731,4 +744,8 @@ color: black;
 
 .busca label{
     height: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
