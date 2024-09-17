@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +12,20 @@
 body {
     margin: 0;
     font-family: Poppins;
-    background-color: #EEE;
-    color: #333; 
+    background-color: #aaaaaa1c;
 }
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
+    width: 12px;               
+  } 
   
   body::-webkit-scrollbar-track {
-    background: #003686;        /* color of the tracking area */
+    background: #003686;        
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #003686;  /* creates padding around scroll thumb */
+    background-color: rgb(255, 255, 255);    
+    border-radius: 20px;      
+    border: 3px solid #003686;  
   }
 .navbar {              
     display: flex;
@@ -128,15 +129,6 @@ header{
     cursor: pointer;
    
 }
-.titulo{
-    font-size: 3vw;
-    margin-bottom: 10%;
-    border-radius: 15px;
-    margin-block:5%;
-    color: #00196A;
-    width: 50vw;
-    
-}
 
 .listaProdutos{
     margin: 30px 0px;
@@ -147,11 +139,22 @@ header{
     align-items: baseline;
     flex-wrap: wrap;
 }
-.listaProdutos .item img{
-    height: 0;
-    width: 0;
-}
 
+.listaProdutos .item img{
+    background-size: cover;
+   
+}
+.listaProdutos .item img .sobrepor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+  }
+  
 
 .container-lista{
     display: flex;
@@ -161,16 +164,21 @@ header{
 
 
 .listaProdutos .item{
-    background-color: #50c8ff13;
-    border: solid #00196A 1px;
+    background-color: #ffffff;
     border-radius: 5px;
     height: 35vh;
     width: 15vw;
+    -webkit-box-shadow: inset 0px 0px 136px -121px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 136px -121px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 136px -121px rgba(0,0,0,0.75);
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
 
 }
 .listaProdutos .item:hover{
-    transform: scale(1.021);
+    transform: scale(1.07);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .listaProdutos .item h2{
@@ -263,6 +271,7 @@ body.mostrarCarrinho .container{
 .listaCarrinho .item img{
     width: 100%;
 }
+
 .listaCarrinho .item{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
@@ -367,24 +376,23 @@ footer{
 .email{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     height: 100px;
     width: 350px;
     margin-left: 10px;
+    gap: 5px;
 }
 .email h2{
-    display: flex;
-    justify-content: flex-s;
     color: white;
     font-size: 18px;
     height: 18px;
-    width: 378px;
+    width: 430px;
     margin-bottom: 5px;
 }
 .input-email input{
     height: 35px;
-    width: 300px;
+    width: 345px;
     border-radius: 8px 0 0 8px;
     background-color: white;   
     font-size: 17px;
@@ -445,17 +453,13 @@ button img{
     height: 10vw;
 }
 .redes-sociais{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     height: 200px;
-    width: 200px;
+    width: 220px;
 }
 
 #redeSocial{
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
 }
 
 /*--------------------------------------*/
@@ -485,12 +489,14 @@ section.slider1{
     height: auto;
     padding: 0 !important;
     overflow: hidden;
+    
 }
 
 .slider-content{
     width: 400%;
     height: auto;
     display: flex;
+    
 }
 
 .slider-content input, .img-mobile{
@@ -716,11 +722,20 @@ cover 40%;
 
 /* ---------------------------------------------- */
 /* fallback */
+.gradiente{
+    position: absolute;
+    margin-bottom: 131px;
+    border: none;
+    width: 99.8%;
+    height: 30px;
+    background-image:linear-gradient(to bottom, black,#eee,transparent);
+}
 .busca{
 display: flex;
 align-items: center;
+position: relative;
 border: 1px solid #00196A;
-background-color: #EEE;
+background-color: white;
 width: 400px;
 margin:20px auto;
 border-radius: 20px;
@@ -730,6 +745,7 @@ color: black;
 
 .busca button{
     text-decoration: none;
+    background-color: white;
     border: none;
     cursor: pointer;
 }
@@ -748,4 +764,21 @@ color: black;
 a{
     text-decoration: none;
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#secret{
+    color: #00196A;
 }

@@ -18,8 +18,7 @@ const productId = getProductIdFromURL();
 const jsonCerto = `json/prod${productId}.json`;
 const jsonProdNum = `prod${productId}`;
 
-console.log(jsonCerto)
-console.log(jsonProdNum)
+
 
 fetch(jsonCerto).then((response) => {
     response.json().then((json) => {
@@ -30,7 +29,10 @@ fetch(jsonCerto).then((response) => {
         novaPaginaProd.innerHTML = `
         
             <div class="imagemProd">
-            <img src="${prod.imagem}" alt="">
+              <div class="container-zoom">
+    <img src="imagem/${prod.id}.png" id="image" alt="Imagem para Zoom">
+    <div class="zoom" id="zoom"></div>
+  </div>
         </div>
 
         <div class="infoProd">
@@ -54,3 +56,4 @@ fetch(jsonCerto).then((response) => {
 //======================================================
 
 console.log(productId); // Verificar se o ID está correto
+

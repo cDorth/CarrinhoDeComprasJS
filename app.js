@@ -28,8 +28,10 @@ const addDataNoHTML = (produtosParaMostrar) => {
             novoproduto.classList.add('item');
             novoproduto.innerHTML =
                 `
+                  
                 <a href="${produto.link}" class="item-link">  
                     <img src="${produto.imagem}" alt="${produto.nome}"> 
+                     <div class="sobrepor"></div>
                     <h2>${produto.nome}</h2>
                     <div class="preco">R$ ${produto.preco}</div>
                 </a>
@@ -157,6 +159,22 @@ searchInput.addEventListener('input', (event) => {
     );
     addDataNoHTML(produtosFiltrados);
 });
+
+var cont = 1
+document.getElementById('radio1').checked = true
+setInterval(() => {
+    proximaImg()
+}, 4000)           
+
+function proximaImg(){
+    cont++
+
+    if(cont > 3){
+        cont = 1 
+    }
+
+    document.getElementById('radio'+cont).checked = true
+};
 
 const inicApp = () => {
     fetch('produtos.json')
