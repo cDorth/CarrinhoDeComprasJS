@@ -67,7 +67,7 @@
         "id": 10,
         "nome": "Dualshock 5",
         "preco": 250,
-        "imagem": "imagem/10.WEBP",
+        "imagem": "imagem/10.png",
         "link": "paginaProd.html?id=10"
     },
     {
@@ -81,7 +81,7 @@
         "id": 12,
         "nome": "PSP",
         "preco": 1500,
-        "imagem": "imagem/12.WEBP",
+        "imagem": "imagem/12.png",
         "link": "paginaProd.html?id=12"
     },
     {
