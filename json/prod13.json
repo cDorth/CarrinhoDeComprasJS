@@ -6,7 +6,12 @@
         "preco": 150,
         "imagem": "imagem/13.WEBP",
         "descricao": "O controle do Xbox Series X oferece um design aprimorado, com maior ergonomia e aderência texturizada. Ele conta com um botão de compartilhamento dedicado, gatilhos responsivos e conectividade rápida, garantindo uma experiência de jogo fluida e confortável em várias plataformas.",
-        "link": "paginaProd.html?id=13"
+        "link": "paginaProd.html?id=13",
+        "li1": "Design ergonômico: Formato aprimorado com texturas e um design que proporciona conforto durante longas sessões de jogo.",
+        "li2": "Conectividade: Conexão via Bluetooth e também por cabo USB-C, permitindo fácil emparelhamento com consoles e PCs.",
+        "li3": "Feedback tátil: Vibração melhorada com motores de resposta tátil, proporcionando uma experiência de jogo mais imersiva.",
+        "li4": "Botões de compartilhamento: Um botão dedicado para compartilhamento de capturas de tela e gravações de vídeo, facilitando a interação nas redes sociais.",
+        "li5": "Compatibilidade: Funciona com Xbox Series X, Xbox One e PC, permitindo que os jogadores usem o mesmo controle em várias plataformas."
         }
         
     ]

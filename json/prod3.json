@@ -1,12 +1,17 @@
 {
     "produtoSite": [
         {
-            "id": 3,
-            "nome": "Xbox One S Minecraft",
-            "preco": 4999,
-            "imagem": "imagem/3.png",
+        "id": 3,
+        "nome": "Xbox One S Minecraft",
+        "preco": 4999,
+        "imagem": "imagem/3.png",
         "descricao": "O Xbox One S Edição Limitada Minecraft traz um design exclusivo inspirado no jogo, com 1TB de armazenamento e sons personalizados. Inclui Minecraft e conteúdos extras, além de suporte para 4K e HDR.",
-        "link": "paginaProd.html?id=3"
+        "link": "paginaProd.html?id=3",
+        "li1": "Processador: AMD Jaguar com 8 núcleos, 1.75 GHz (mesmo do Xbox One original).",
+        "li2": "GPU: AMD Radeon GCN com clock de 914 MHz e 1.4 TFLOPS (mais rápido que o original).",
+        "li3": "Memória: 8 GB DDR3 RAM com largura de banda de 68 GB/s.",
+        "li4": "Armazenamento: 1 TB de HDD, edição especial com design temático de Minecraft.",
+        "li5": "Nova Geração: Por ser um console da mais nova geração roda jogos em alta qualidade."
         }
         
     ]

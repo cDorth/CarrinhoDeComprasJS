@@ -4,9 +4,14 @@
         "id": 10,
         "nome": "DualSense 5",
         "preco": 250,
-        "imagem": "imagem/10.WEBP",
+        "imagem": "imagem/10.png",
         "descricao": "O DualSense, controle do PS5, oferece uma experiência imersiva com feedback háptico e gatilhos adaptáveis, proporcionando sensações realistas nos jogos. Ele conta com microfone embutido, design ergonômico e é compatível com várias funcionalidades do console, elevando a jogabilidade.",
-        "link": "paginaProd.html?id=10"
+        "link": "paginaProd.html?id=10",
+        "li1": "Feedback tátil: Tecnologia de feedback tátil que permite sentir texturas e efeitos de impacto em jogos, proporcionando uma experiência mais imersiva.",
+        "li2": "Gatilhos adaptativos: Gatilhos L2 e R2 com resistência variável, que oferecem diferentes níveis de pressão e feedback, dependendo da ação no jogo.",
+        "li3": "Microfone integrado: Microfone embutido para comunicação rápida, sem a necessidade de um headset, além de um conector para fones de ouvido de 3.5 mm.",
+        "li4": "Bateria recarregável: Bateria de ion de lítio com carregamento via cabo USB-C, proporcionando longas horas de jogo sem interrupções.",
+        "li5": "Design ergonômico: Formato aprimorado para conforto durante longas sessões de jogo, com acabamentos texturizados para melhor aderência."
         }
         
     ]

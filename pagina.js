@@ -28,22 +28,35 @@ fetch(jsonCerto).then((response) => {
         novaPaginaProd.classList.add('pagProd');
         novaPaginaProd.innerHTML = `
         
-            <div class="imagemProd">
-              <div class="container-zoom">
-    <img src="imagem/${prod.id}.png" id="image" alt="Imagem para Zoom">
-    <div class="zoom" id="zoom"></div>
-  </div>
-        </div>
+        <div class="produtoImgInfo">
 
-        <div class="infoProd">
+          <div class="imagemProd">
+            <img src="imagem/${prod.id}.png" id="image" alt="...">
+          </div>
+
+          <div class="infoProd">
             <h1>${prod.nome}</h1>
             <p>${prod.descricao}</p>
               <div class="precoBtn">
                 <span id="preco">R$${prod.preco},00</span>
                 <button class="addCarrinho" data-id="${prod.id}">Adicionar no Carrinho</button>
               </div>
-        </div>
+            </div>
         
+        </div>
+
+        <div class="especificao">
+        <h1>Especificações Técnicas</h1>
+        <br>
+          <ul>
+              <li>${prod.li1}</li>
+              <li>${prod.li2}</li>
+              <li>${prod.li3}</li>
+              <li>${prod.li4}</li>
+              <li>${prod.li5}</li>
+          </ul>
+        </div>
+
     `;
     paginaDoProd.appendChild(novaPaginaProd);
       });

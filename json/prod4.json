@@ -6,7 +6,12 @@
         "preco": 4379,
         "imagem": "imagem/4.png",
         "descricao": "O Xbox Series X é o console mais poderoso da Microsoft, com gráficos em 4K, 1TB de armazenamento SSD e suporte para ray tracing. Ideal para jogos de última geração com tempos de carregamento rápidos e desempenho superior.",
-        "link": "paginaProd.html?id=4"
+        "link": "paginaProd.html?id=4",
+        "li1": "Processador (CPU): AMD Zen 2, 8 núcleos a 3.8 GHz (3.6 GHz com SMT habilitado).",
+        "li2": "GPU: AMD RDNA 2 com 52 unidades de computação a 1.825 GHz, capaz de 12 TFLOPS.",
+        "li3": "Memória: 16 GB GDDR6 com largura de banda de até 560 GB/s.",
+        "li4": "Armazenamento: 1 TB NVMe SSD com suporte a expansão via cartões proprietários.",
+        "li5": "Compatibilidade: O console oferece retrocompatibilidade com milhares de títulos do Xbox One, Xbox 360 e Xbox original, com melhorias automáticas de performance e gráficos em muitos deles."
         }
         
     ]

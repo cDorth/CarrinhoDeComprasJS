@@ -31,7 +31,9 @@ const addDataNoHTML = (produtosParaMostrar) => {
                   
                 <a href="${produto.link}" class="item-link">  
                     <img src="${produto.imagem}" alt="${produto.nome}"> 
-                     <div class="sobrepor"></div>
+                    <br/>
+                    <hr/>
+                     
                     <h2>${produto.nome}</h2>
                     <div class="preco">R$ ${produto.preco}</div>
                 </a>

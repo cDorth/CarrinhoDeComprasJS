@@ -6,7 +6,12 @@
         "preco": 1500,
         "imagem": "imagem/15.png",
         "descricao": "Lançado em 2000, o PS2 é um dos consoles mais vendidos de todos os tempos, conhecido por sua vasta biblioteca de jogos e suporte a DVDs. Ele ofereceu gráficos avançados para sua época e se tornou um ícone na indústria de games.",
-        "link": "paginaProd.html?id=15"
+        "link": "paginaProd.html?id=15",
+        "li1": "Processador (CPU): Emotion Engine de 294 MHz, desenvolvido pela Sony, com arquitetura de 128 bits.",
+        "li2": "GPU: Graphics Synthesizer com clock de 147 MHz, capaz de renderizar gráficos em 3D com efeitos avançados para a época.",
+        "li3": "Memória: 32 MB de RAM e 4 MB de VRAM para gráficos.",
+        "li4": "Armazenamento: Suporte a discos de DVD, além de um disco rígido opcional em alguns modelos.",
+        "li5": "Compatibilidade: A PS2 também é compatível com CDs de áudio e jogos de PS1, oferecendo uma vasta biblioteca de jogos."
         }
         
     ]

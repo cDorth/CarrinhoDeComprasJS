@@ -6,7 +6,12 @@
         "preco": 3999,
         "imagem": "imagem/7.png",
         "descricao": "O PlayStation 5 é o console de última geração da Sony, oferecendo desempenho ultrarrápido com o SSD, gráficos em 4K e ray tracing. Com jogos imersivos e exclusivos, ele também suporta áudio 3D e oferece uma experiência de jogo fluida e envolvente.",
-        "link": "paginaProd.html?id=7"
+        "link": "paginaProd.html?id=7",
+        "li1": "Processador (CPU): AMD Zen 2 com 8 núcleos a 3.5 GHz (variável).",
+        "li2": "GPU: AMD RDNA 2 com 36 unidades de computação, capaz de 10.28 TFLOPS, suportando Ray Tracing e resolução 4K.",
+        "li3": "Memória: 16 GB GDDR6 com largura de banda de até 448 GB/s.",
+        "li4": "Armazenamento: 825 GB SSD NVMe ultrarrápido, com suporte para expansão via cartão M.2.",
+        "li5": "Suporte a mídia: Capacidade de reprodução de jogos em 4K até 120 FPS, além de suporte a 8K para vídeos e conteúdos compatíveis."
         }
         
     ]

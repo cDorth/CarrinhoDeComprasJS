@@ -6,8 +6,13 @@
             "preco": 1299,
             "imagem": "imagem/1.png",
             "descricao": "O Xbox 360 branco é um console de videogame da Microsoft que oferece uma grande variedade de jogos e recursos de entretenimento, como streaming de filmes e música, além de conectividade online.",
-            "link": "paginaProd.html?id=1"
+            "link": "paginaProd.html?id=1",
+            "li1": "Processador: 3 núcleos, 3.2 GHz (IBM Xenon).",
+            "li2": "GPU: ATI Xenos, 500 MHz.",
+            "li3": "Memória: 512 MB GDDR3 RAM.",
+            "li4": "Armazenamento: HDD removível de até 320 GB.",
+            "li5": "Conectividade: Ethernet, Wi-Fi (opcional), USB 2.0."
         }
         
-    ]
+    ]   
     }

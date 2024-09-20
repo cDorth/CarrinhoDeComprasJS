@@ -6,7 +6,12 @@
             "preco": 1887,
             "imagem": "imagem/2.png",
             "descricao": "O Xbox One é um console de videogame poderoso com gráficos avançados, streaming de mídia e uma ampla seleção de jogos. Ideal para entretenimento e jogos de última geração. Juntamente do Kinect um sensor de movimento para Xbox One que permite jogar e navegar usando gestos e comandos de voz, oferecendo uma experiência interativa e imersiva.",
-            "link": "paginaProd.html?id=2"
+            "link": "paginaProd.html?id=2",
+            "li1": "Diversidade: Possui diversos jogos feitos para o kinect, com total imersão.",
+            "li2": "Câmera: Câmera de 1080p com captura de vídeo em Full HD.",
+            "li3": "Campo de visão: Sensor com campo de visão de 70° a 60°.",
+            "li4": "Detecção de movimento: Capaz de rastrear até 6 pessoas simultaneamente com precisão.",
+            "li5": "Reconhecimento de profundidade: Usa tecnologia de infravermelho para mapear o ambiente e detectar a profundidade."
         }
     ]
 }

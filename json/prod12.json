@@ -4,9 +4,14 @@
         "id": 12,
         "nome": "PSP",
         "preco": 1500,
-        "imagem": "imagem/12.WEBP",
+        "imagem": "imagem/12.png",
         "descricao": "O PSP (PlayStation Portable) é um console portátil da Sony, lançado para oferecer jogos de alta qualidade em qualquer lugar. Com tela widescreen, conectividade Wi-Fi e uma vasta biblioteca de jogos e multimídia, ele marcou uma geração de jogos portáteis.",
-        "link": "paginaProd.html?id=12"
+        "link": "paginaProd.html?id=12",
+        "li1": "Processador (CPU): MIPS R4000 com clock de 333 MHz, proporcionando desempenho para jogos em 3D.",
+        "li2": "GPU: GPU customizada que suporta gráficos 3D com resolução de até 480 x 272 pixels.",
+        "li3": "Memória: 32 MB de RAM e 4 MB de VRAM para gráficos.",
+        "li4": "Armazenamento: Suporte para UMD (Universal Media Disc) e Memory Stick Duo para armazenamento de jogos, vídeos e música.",
+        "li5": "Tela: Tela LCD de 4.3 polegadas com retroiluminação, oferecendo uma boa qualidade de imagem para jogos e vídeos."
         }
         
     ]

@@ -6,7 +6,12 @@
         "preco": 6000,
         "imagem": "imagem/11.png",
         "descricao": "Carlos, Davi, Guilherme e Pedro",
-        "link": "paginaProd.html?id=11"
+        "link": "paginaProd.html?id=11",
+        "li1": "Câmera: Geralmente equipada com uma câmera HD (720p ou 1080p) para gravação de vídeos e captura de fotos aéreas.",
+        "li2": "Tempo de voo: Tempo de voo típico de 10 a 20 minutos por carga, dependendo da capacidade da bateria.",
+        "li3": "Distância de controle: Alcance de controle de cerca de 100 a 500 metros, variando conforme o modelo e as condições.",
+        "li4": "Sistema de navegação: Pode incluir GPS para funções como retorno automático, modo de follow-me e georreferenciamento.",
+        "li5": "Recursos adicionais: Modos de voo como hovering, waypoints, e headless mode para facilitar o controle e a navegação."
         }
         
     ]

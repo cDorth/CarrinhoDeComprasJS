@@ -6,7 +6,12 @@
         "preco": 450,
         "imagem": "imagem/9.png",
         "descricao": "Um headset gamer oferece áudio imersivo e comunicação clara durante jogos, com recursos como som surround, cancelamento de ruído e microfone ajustável. Ele é projetado para conforto em longas sessões de jogo e compatível com diversas plataformas, como PCs e consoles.",
-        "link": "paginaProd.html?id=9"
+        "link": "paginaProd.html?id=9",
+        "li1": "Drivers: 40 mm a 50 mm, proporcionando som imersivo e graves profundos para uma experiência de jogo envolvente.",
+        "li2": "Microfone: Microfone com cancelamento de ruído, geralmente ajustável, para comunicação clara durante as partidas.",
+        "li3": "Conectividade: Conexão via cabo 3.5 mm ou USB, dependendo do modelo, com alguns oferecendo compatibilidade com consoles e PCs.",
+        "li4": "Design: Almofadas acolchoadas para conforto durante longas sessões de jogo, com ajuste de headband para melhor encaixe.",
+        "li5": "Controles: Controles de volume e mudo integrados no cabo ou no fone para fácil acesso durante o jogo."
         }
         
     ]

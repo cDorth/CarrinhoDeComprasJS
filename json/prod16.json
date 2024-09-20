@@ -6,7 +6,12 @@
         "preco": 2000,
         "imagem": "imagem/16.png",
         "descricao": "Lançado em 2006, o PS3 trouxe gráficos em alta definição, suporte a Blu-ray e uma robusta plataforma online com a PlayStation Network. Ele é conhecido por seus jogos exclusivos e a integração de mídia e entretenimento.",
-        "link": "paginaProd.html?id=16"
+        "link": "paginaProd.html?id=16",
+        "li1": "Processador (CPU): Cell Broadband Engine com 3.2 GHz, composto por um núcleo PowerPC e 7 núcleos de processamento Synergistic.",
+        "li2": "GPU: NVIDIA RSX com suporte a gráficos em alta definição, permitindo resolução de até 1080p.",
+        "li3": "Memória: 256 MB de RAM e 256 MB de VRAM, o que possibilita gráficos mais ricos e experiências de jogo mais complexas.",
+        "li4": "Armazenamento: Disponível em diferentes modelos com HDDs de 20 GB, 60 GB, 80 GB, 120 GB, 160 GB, 250 GB e 500 GB, permitindo armazenamento de jogos e mídia.",
+        "li5": "Conectividade: Suporte a Wi-Fi, Ethernet, Bluetooth e várias portas USB 2.0, além de suporte a PlayStation Network para jogos online e downloads."
         }
         
     ]

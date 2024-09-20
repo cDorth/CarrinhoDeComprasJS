@@ -6,7 +6,12 @@
         "preco": 4000,
         "imagem": "imagem/5.png",
         "descricao": "O Meta Quest 3 é um headset de realidade virtual e aumentada da Meta, oferecendo gráficos aprimorados, maior conforto e experiências imersivas. Ele combina o mundo virtual com o real, sendo ideal para jogos e aplicativos interativos.",
-        "link": "paginaProd.html?id=5"
+        "link": "paginaProd.html?id=5",
+        "li1": "Processador: Snapdragon XR2 Gen 2 para alto desempenho em VR.",
+        "li2": "Resolução: Mais de 2.064 x 2.208 pixels por olho para gráficos nítidos.",
+        "li3": "Diversão imersiva: Realidade Mista para misturar o mundo real e virtual.",
+        "li4": "Interação social: Acesso a muitos jogos e experiências multijogador.",
+        "li5": "Standalone: Funciona sem fios ou PC, oferecendo liberdade total."
         }
         
     ]

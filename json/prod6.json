@@ -6,7 +6,12 @@
         "preco": 2050,
         "imagem": "imagem/6.png",
         "descricao": "O PlayStation é o console de videogame da Sony, conhecido por seu desempenho poderoso e uma vasta biblioteca de jogos exclusivos. Ele oferece gráficos de alta qualidade, suporte a multiplayer online e diversas opções de entretenimento, como streaming de vídeo e música.",
-        "link": "paginaProd.html?id=6"
+        "link": "paginaProd.html?id=6",
+        "li1": "Processador (CPU): AMD Jaguar com 8 núcleos, operando a 2.75 GHz.",
+        "li2": "GPU: AMD Radeon com 1.84 TFLOPS, suporte a gráficos em alta definição e efeitos avançados.",
+        "li3": "Memória: 8 GB GDDR5, proporcionando alta largura de banda e melhor desempenho em jogos.",
+        "li4": "Armazenamento: Várias opções de HDD, variando de 500 GB a 2 TB, com suporte a discos rígidos externos.",
+        "li5": "Conectividade: Wi-Fi, Bluetooth 4.0, Ethernet, e várias portas USB 3.0."
         }
         
     ]

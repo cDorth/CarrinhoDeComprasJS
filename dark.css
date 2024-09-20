@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: Poppins;
-    background-color: #000000;
+    background-color: #181818;
     color: #ffffff; 
 }
 .navbar {              
@@ -158,7 +158,7 @@ header{
 }
 .listaProdutos .item:hover{
     transform: scale(1.021);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.925);
 
 
 }
@@ -312,7 +312,7 @@ body.mostrarCarrinho .container{
 footer{
     height: 500px;
     width: 100%;
-    background-color: #6b000044; 
+    background-color: #350000; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,24 +357,23 @@ footer{
 .email{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     height: 100px;
     width: 350px;
     margin-left: 10px;
+    gap: 5px;
 }
 .email h2{
-    display: flex;
-    justify-content: flex-s;
     color: white;
     font-size: 18px;
     height: 18px;
-    width: 378px;
+    width: 430px;
     margin-bottom: 5px;
 }
 .input-email input{
     height: 35px;
-    width: 300px;
+    width: 345px;
     border-radius: 8px 0 0 8px;
     background-color: white;   
     font-size: 17px;
@@ -391,10 +390,6 @@ footer{
     justify-content: center;
 }
 
-button img{
-    height: 15px;
-    width: 15px;
-}
 
 .linha-rodape{
     height: 2px;
@@ -435,17 +430,13 @@ button img{
     height: 10vw;
 }
 .redes-sociais{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     height: 200px;
-    width: 200px;
+    width: 220px;
 }
 
 #redeSocial{
-    height: 85px;
-    width: 85px;
+    height: 55px;
+    width: 55px;
 }
 
 /*--------------------------------------*/
@@ -732,4 +723,9 @@ __,,--.--                                '
     a{
         text-decoration: none;
         color: white;
+    }
+    .item hr{
+        width: 80%;
+        margin-left: 10%;
+        opacity: 20%;
     }

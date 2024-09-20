@@ -6,7 +6,12 @@
         "preco": 1500,
         "imagem": "imagem/14.png",
         "descricao": "O Nintendo Switch Lite é uma versão portátil do popular Switch, com um design compacto e leve. É ideal para jogos em movimento, oferecendo uma experiência de jogo dedicada com uma vasta biblioteca de títulos, mas sem suporte para conexão com a TV.",
-        "link": "paginaProd.html?id=14"
+        "link": "paginaProd.html?id=14",
+        "li1": "Design compacto: Console portátil leve e compacto, sem suporte para conexão a TVs, ideal para jogos em movimento.",
+        "li2": "Tela: Tela de 5.5 polegadas com resolução de 1280 x 720 pixels, oferecendo gráficos vibrantes em um formato menor.",
+        "li3": "Processador: Equipado com o mesmo processador NVIDIA Tegra que o Nintendo Switch, garantindo desempenho eficiente para jogos.",
+        "li4": "Armazenamento: 32 GB de armazenamento interno, expansível via cartão microSD.",
+        "li5": "Bateria: Duração da bateria de aproximadamente 3 a 7 horas, dependendo do jogo e do uso.    "
         }
         
     ]
