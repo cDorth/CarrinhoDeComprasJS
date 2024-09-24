@@ -39,7 +39,7 @@ fetch(jsonCerto).then((response) => {
             <p>${prod.descricao}</p>
               <div class="precoBtn">
                 <span id="preco">R$${prod.preco},00</span>
-                <button class="addCarrinho" data-id="${prod.id}">Adicionar no Carrinho</button>
+                <button class="addCarrinho" data-id="${prod.id}"><span id="addCarrinhoText">Adicionar no Carrinho</span></button>
               </div>
             </div>
         
@@ -69,4 +69,3 @@ fetch(jsonCerto).then((response) => {
 //======================================================
 
 console.log(productId); // Verificar se o ID está correto
-
